@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="#">
+												<div class="left-element"><i class="fa fa-warning color-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Jane Doe</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html" class="linkChecked">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="content  animated fadeInRight">
+				<div class="wrap">
+					<!--右边位置页面标题和所在页面位置所有页面通用-->
+					<div class="content-header">
+						<h2>Withdrawal</h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="Defaults.html"><i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>Withdrawal</li>
+						</ul>
+					</div>
+					<!--右边位置over-->
+
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>New Withdrawal
+							<a href="javascript:" class="export"><i class="fa fa-upload"></i>Export</a>
+						</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="alert alert-error" id="alert1">
+										<strong>The End</strong>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">From:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" id="dp1" data-date-format="yyyy-mm-dd" value="Choose Date" class="form-control" />
+											</div>
+											<span class="help-block">Error message!</span>
+											<!--错误提示信息，如需要错误信息，可把上面一行代码（span标签）复制添加在html文件对应处，如有疑问，请找我我我我 ^^-->
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">To:</label>
+											<div class="dateInput">
+												<input type="text" class="form-control" readonly="readonly" id="dp2" data-date-format="yyyy-mm-dd" value="Choose Date" />
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Status:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Search:</label>
+											<input type="text" class="form-control" placeholder="Search...">
+										</div>
+									</div>
+
+									<div class="col-md-4 m-center">
+										<button class="btn btn-sm btn-search mT17" type="button"><i class="fa fa-search"></i>Search</button>
+										<button class="btn btn-sm btn-search mT17" type="button"><i class="fa fa-refresh"></i>Refresh</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--表格-->
+					<div class="table-responsive">
+						<table class="table table-hover table-striped" width="100%" height="100%">
+							<thead>
+								<tr>
+									<th>Application Date<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th>Chinese Name<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th>MT4 Account<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th>Withdrawal Amount<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th class="no-sort">State</th>
+									<th class="no-sort">City</th>
+									<th>Serial Number<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th class="no-sort">Client's Note</th>
+									<th class="no-sort">Status</th>
+									<th>Operation Time<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th class="no-sort">Apply IP</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2017-11-23 14:11:22</td>
+									<td>
+										<a href="withDrawalEdit.html">杨帆</a>
+									</td>
+									<td>
+										<a href="withDrawalEdit.html">760190</a>
+									</td>
+									<td>$100000.00</td>
+									<td>上海</td>
+									<td>嘉定</td>
+									<td>760190_W17072010967</td>
+									<td>-</td>
+									<td><span class="bg-warning">Make Payment(Dinpay)</span></td>
+									<td>2017-08-23 21:16:30</td>
+									<td>180.169.125.254</td>
+								</tr>
+								<tr>
+									<td>2017-11-23 14:11:22</td>
+									<td>
+										<a href="withDrawalEdit.html">杨帆</a>
+									</td>
+									<td>
+										<a href="withDrawalEdit.html">760190</a>
+									</td>
+									<td>$100000.00</td>
+									<td>上海</td>
+									<td>嘉定</td>
+									<td>760190_W17072010967</td>
+									<td>-</td>
+									<td><span class="bg-danger">Make Payment(Avoda)</span></td>
+									<td>2017-08-23 21:16:30</td>
+									<td>180.169.125.254</td>
+								</tr>
+								<tr>
+									<td>2017-11-23 14:11:22</td>
+									<td>
+										<a href="withDrawalEdit.html">杨帆</a>
+									</td>
+									<td>
+										<a href="withDrawalEdit.html">760190</a>
+									</td>
+									<td>$100000.00</td>
+									<td>上海</td>
+									<td>嘉定</td>
+									<td>760190_W17072010967</td>
+									<td>-</td>
+									<td><span class="bg-info">In Process</span></td>
+									<td>2017-08-23 21:16:30</td>
+									<td>180.169.125.254</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<nav class="pageNav">
+						<ul class="pagination">
+							<li class="disabled">
+								<a href="javascript:" aria-label="Previous">«</a>
+							</li>
+							<li class="active">
+								<a href="javascript:">1</a>
+							</li>
+							<li class="">
+								<a href="javascript:">2</a>
+							</li>
+							<li class="">
+								<a href="javascript:">3</a>
+							</li>
+							<li class="">
+								<a href="javascript:">4</a>
+							</li>
+							<li class="">
+								<a href="javascript:">5</a>
+							</li>
+							<li class="">
+								<a href="javascript:">6</a>
+							</li>
+							<li class="">
+								<a href="javascript:">7</a>
+							</li>
+							<li class="ellipsis">...</li>
+							<li>
+								<a href="javascript:" aria-label="Previous">»</a>
+							</li>
+						</ul>
+						<span class="cols">cols: 
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+							</select>
+						</span>
+					</nav>
+					<div class="clear"></div>
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>Withdrawal Completed
+							<a href="javascript:" class="export"><i class="fa fa-upload"></i>Export</a>
+						</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="alert alert-error" id="alert2">
+										<strong>The End</strong>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">From:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" id="dp3" data-date-format="yyyy-mm-dd" value="Choose Date" class="form-control" />
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">To:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" value="Choose Date" id="dp4" data-date-format="yyyy-mm-dd" class="form-control" />
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Status:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="">1</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Search:</label>
+											<input type="text" class="form-control" placeholder="Search...">
+										</div>
+									</div>
+									<div class="col-md-4 m-center">
+										<button class="btn btn-sm btn-search mT17" type="button"><i class="fa fa-search"></i>Search</button>
+										<button class="btn btn-sm btn-search mT17" type="button"><i class="fa fa-refresh"></i>Refresh</button>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</form>
+						</div>
+					</div>
+					<!--表格-->
+					<div class="table-responsive">
+						<table class="table table-hover table-striped" width="100%" height="100%">
+							<thead>
+								<tr>
+									<th>Application Date<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th>Chinese Name<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th>MT4 Account<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th>Withdrawal Amount<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th class="no-sort">State</th>
+									<th class="no-sort">City</th>
+									<th>Serial Number<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th class="no-sort">Client's Note</th>
+									<th class="no-sort">Status</th>
+									<th>Operation Time<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+									<th class="no-sort">Apply IP</th>
+									<th class="no-sort">Operation Records</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2017-11-23 14:11:22</td>
+									<td>
+										<a href="withDrawalEdit.html">杨帆</a>
+									</td>
+									<td>
+										<a href="withDrawalEdit.html">760190</a>
+									</td>
+									<td>$100000.00</td>
+									<td>上海</td>
+									<td>嘉定</td>
+									<td>760190_W17072010967</td>
+									<td>测试</td>
+									<td><span class="bg-gray">Make Payment(Dinpay)</span></td>
+									<td>2017-08-23 21:16:30</td>
+									<td>180.169.125.254 </td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>2017-11-23 14:11:22</td>
+									<td>
+										<a href="withDrawalEdit.html">杨帆</a>
+									</td>
+									<td>
+										<a href="withDrawalEdit.html">760190</a>
+									</td>
+									<td>$100000.00</td>
+									<td>上海</td>
+									<td>嘉定</td>
+									<td>760190_W17072010967</td>
+									<td>-</td>
+									<td><span class="bg-gray">Make Payment(Avoda)</span></td>
+									<td>2017-11-14 03:25:30</td>
+									<td>180.169.125.254 </td>
+									<td>-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<nav class="pageNav">
+						<ul class="pagination">
+							<li class="disabled">
+								<a href="javascript:" aria-label="Previous">«</a>
+							</li>
+							<li class="active">
+								<a href="javascript:">1</a>
+							</li>
+							<li class="">
+								<a href="javascript:">2</a>
+							</li>
+							<li class="">
+								<a href="javascript:">3</a>
+							</li>
+							<li class="">
+								<a href="javascript:">4</a>
+							</li>
+							<li class="">
+								<a href="javascript:">5</a>
+							</li>
+							<li class="">
+								<a href="javascript:">6</a>
+							</li>
+							<li class="">
+								<a href="javascript:">7</a>
+							</li>
+							<li class="ellipsis">...</li>
+							<li>
+								<a href="javascript:" aria-label="Previous">»</a>
+							</li>
+						</ul>
+						<span class="cols">cols: 
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+							</select>
+						</span>
+					</nav>
+					<div class="clear"></div>
+
+				</div>
+				<footer>2020 © IB Portfolio by Go Markets.</footer>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!----->
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

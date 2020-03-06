@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Go Markets | Login Page</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+		<meta content="" name="description" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body class="login">
+		<div class=" animated slideInDown">
+			<a class="logo" href="https://www.gomarkets.cn/" target="_blank"><img src="images/footer_logo.png" alt="" /></a>
+			<div class="loginContent">
+				<!--登录-->
+				<form method="post" class="login-form" action="">
+					<h3>Login To Your Account</h3>
+					<div class="allForms">
+						<!--警告框-->
+						<div class="alert alert-danger alert-dismissible" role="alert" id="loginerror">
+							<button class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true" class="fa fa-close"></span>
+							</button>
+							<span>Enter User Email And Password.</span>
+						</div>
+						<!--警告框over-->
+						<div class="form-group">
+							<div class="input-icon">
+								<i class="fa fa-envelope"></i>
+								<input class="form-control" type="text" placeholder="Email" id="email" name="email" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-icon">
+								<i class="fa fa-lock"></i>
+								<input class="form-control" type="password" placeholder="Password" id="password" name="password" />
+							</div>
+						</div>
+						<div class="checkbox">
+							<span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check1" /></span><label for="check1">Remember me</label>
+							<label class="pull-right"><a href="javascript:;" class="" id="forget-password">Forgot Password</a></label>
+						</div>
+						<button type="submit" class="btn btn-submit col-xs-6 col-xs-offset-3"><i class="fa fa-spinner fa-pulse"></i><!--20180125-->Login <i class="fa fa-angle-right"></i></button>
+						<div class="clear"></div>
+					</div>
+				</form>
+				<!--登录 over-->
+				<!--忘记密码-->
+				<form class="forget-form">
+					<h3 class="">Forget Password ?</h3>
+					<div class="allForms">
+						<!--警告框-->
+						<div class="alert alert-danger alert-dismissible" role="alert" id="forgeterror">
+							<button class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true" class="fa fa-close"></span>
+							</button>
+							<span>Enter user email.</span>
+						</div>
+						<!--警告框over-->
+						<p>Enter Your E-mail Address Below To Reset Your Password.</p>
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-icon">
+									<i class="fa fa-envelope"></i>
+									<input class="form-control" id="forgetemail" type="text" placeholder="Email" name="email" />
+								</div>
+							</div>
+						</div>
+						<div class="form-actions">
+							<button type="button" id="back-btn" class="btn btn-default"><i class="fa fa-reply"></i> Back</button>
+							<button type="submit" class="btn btn-submit pull-right">Submit <i class="fa fa-angle-right"></i> </button>
+						</div>
+					</div>
+				</form>
+				<!--忘记密码over-->
+				<!--注册表单-->
+				<form class="register-form" action="http://161.202.51.134:9530/Defaults">
+					<h3 class="">Sign Up</h3>
+					<div class="allForms">
+						<p>Enter your account details below:</p>
+						<div class="control-group">
+							<label class="control-label">Username</label>
+							<div class="input-icon">
+								<i class="fa fa-user"></i>
+								<input class="form-control" type="text" placeholder="Username" name="username" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Password</label>
+							<div class="input-icon">
+								<i class="fa fa-lock"></i>
+								<input class="form-control" type="password" id="register_password" placeholder="Password" name="password" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label">Re-type Your Password</label>
+							<div class="input-icon">
+								<i class="fa fa-lock"></i>
+								<input class="form-control" type="password" placeholder="Re-type Your Password" name="rpassword" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label visible-ie8 visible-ie9">Email</label>
+							<div class="input-icon">
+								<i class="fa fa-envelope"></i>
+								<input class="form-control" type="text" placeholder="Email" name="email" />
+							</div>
+						</div>
+						<div class="checkbox">
+							<span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check2" /></span><label for="check2">I agree to the <a href="javascript:">Terms of Service</a> and <a href="javascript:">Privacy Policy</a>me</label>
+						</div>
+						<div class="form-actions">
+							<button id="register-back-btn" type="button" class="btn"> <i class="fa fa-reply"></i> Back</button>
+							<button type="submit" id="register-submit-btn" class="btn btn-submit pull-right"> Sign Up<i class="fa fa-angle-right"></i></button>
+						</div>
+					</div>
+				</form>
+				<!--注册表单over-->
+			</div>
+			<div class="copyright">2019 © IB Portfolio by Go Markets.</div>
+		</div>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/loginBoot.js"></script>
+		<script src="js/formCheck.js"></script>
+		<script src="js/login.js"></script>
+		<script>
+			$(document).ready(function() {
+				App.init();
+				Login.init();
+			});
+		</script>
+	</body>
+</html>

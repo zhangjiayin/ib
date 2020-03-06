@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="#">
+												<div class="left-element"><i class="fa fa-warning color-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Test Name</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html" class="linkChecked">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="content  animated fadeInRight">
+				<div class="wrap">
+					<!--右边位置页面标题和所在页面位置所有页面通用-->
+					<div class="content-header">
+						<h2>My Customer Service<small class="hidden-xs">My Customer Service Detail Information</small></h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="Defaults.html"><i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>My Customer Service</li>
+						</ul>
+					</div>
+					<!--右边位置over-->
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>Customer Service Search</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="alert alert-error" id="alert1">
+										<strong>The End</strong>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Account Number:</label>
+											<input type="text" class="form-control" value="Account Number" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Account Name:</label>
+											<input type="text" class="form-control" value="Account Name" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Email:</label>
+											<input type="text" class="form-control" value="Email" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">IB Brand:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1" id="chosen1">
+												<option value=""></option>
+												<option value="">身份证</option>
+												<option value="">护照</option>
+												<option value="">驾驶证</option>
+												<option value="">其它</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">From:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" id="dp1" data-date-format="yyyy-mm-dd" value="Choose Date" class="form-control" />
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">To:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" id="dp2" data-date-format="yyyy-mm-dd" class="form-control" value="Choose Date" />
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr />
+								<div class="text-center">
+									<button type="button" class="btn btn-sm btn-search"><i class="fa fa-search"></i>Search</button>
+									<button type="button" class="btn btn-sm btn-search col-sm-offset-1"><i class="fa fa-close"></i>Clear</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>My Customer Information
+							<a href="javascript:" class="enableEdit"><i class="fa fa-edit"></i>Edit</a>
+						</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">ID CODE:</label>
+											<input type="text" class="form-control" value="05CF" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">User ID:</label>
+											<input type="text" class="form-control" value="743016" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Name:</label>
+											<input type="text" class="form-control" value="YangFan" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Phone:</label>
+											<input type="text" class="form-control" value="+86.13115859251" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Email:</label>
+											<input type="text" class="form-control" value="yangTest.163.com" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Gender:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value="">男</option>
+												<option value="">女</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Date of Birth:</label>
+											<input type="text" class="form-control" value="1972-12-05" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Country:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value="">中国</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Province:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">City:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">Wuhan</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="">Address:</label>
+											<input type="text" class="form-control" value="wuhan" disabled="disabled">
+										</div>
+									</div>
+
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Zip Code:</label>
+											<input type="text" class="form-control" value="5000" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">ID Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">ID Number:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Base currency:</label>
+											<select class="form-control chosen" data-placeholder="USD美元" tabindex="1">
+												<option value="">USD美元</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Account type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">税前收入:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">净资产:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">收入来源:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Brand</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">IB Brand:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Sub IB Brand:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Sub2 IB Brand:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Sub3 IB Brand:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Sub4 IB Brand:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Tax rate:</label>
+											<input type="text" class="form-control" value="0" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">MetaQuotes ID:</label>
+											<input type="text" class="form-control" value="0" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Status:</label>
+											<input type="text" class="form-control" value="" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Color:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Agent account:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Comment:</label>
+											<input type="text" class="form-control" value="" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Lead source:</label>
+											<input type="text" class="form-control" value="" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Group:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Leverage:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Card" tabindex="1">
+												<option value=""></option>
+												<option value="">身份证</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Balance:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Credit:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Equity:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Margin:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Free:</label>
+											<input type="text" class="form-control" value="265646884684" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Master password:</label>
+											<input type="text" class="form-control" value="" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Investor password:</label>
+											<input type="text" class="form-control" value="" disabled="disabled">
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Login Server:</label>
+											<span class="form-control">555555</span>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Check password:</label>
+											<input type="text" class="form-control" value="" disabled="disabled">
+										</div>
+									</div>
+								</div>
+								<hr />
+								<div class="row editCheck">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="" style="text-align: center;">选择交易种类:</label>
+											<div class="row">
+												<p class="col-md-4"><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check4" /></span><label for="check4">Read only(without trading)</label></p>
+												<p class="col-md-4"><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check5" /></span><label for="check5">Enable</label></p>
+												<p class="col-md-4"><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check6" /></span><label for="check6">Send reports</label></p>
+												<p class="col-md-4"><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check7" /></span><label for="check7">Allow to change password </label></p>
+												<p class="col-md-4"><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check8" /></span><label for="check8">Enable one-time psaaword</label></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr />
+								<div class="text-center">
+									<button type="button" class="btn btn-sm btn-search"><i class="fa fa-check"></i>Change</button>
+									<button type="button" class="btn btn-sm btn-search col-sm-offset-1"><i class="fa fa-check"></i>Check</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--Open Positions-->
+					<div class="byLoginPositions">
+						<div class='pageTitle'>
+							<p class="pageTitBg">Open Positions</p>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-hover table-striped" width="100%" height="100%">
+								<thead>
+									<tr>
+										<th>Deal<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+										<th class="no-sort">Login</th>
+										<th class="no-sort">Open Time</th>
+										<th class="no-sort">Type</th>
+										<th class="no-sort">Symbol</th>
+										<th class="no-sort">Volume</th>
+										<th class="no-sort">Open Price</th>
+										<th class="no-sort">S/L</th>
+										<th class="no-sort">T/P</th>
+										<th class="no-sort">Reason</th>
+										<th class="no-sort">Commission</th>
+										<th class="no-sort">Taxes</th>
+										<th class="no-sort">Agent</th>
+										<th class="no-sort">Swap</th>
+										<th class="no-sort">USD</th>
+										<th class="no-sort">Comment</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="">5056</a>
+										</td>
+										<td>556552</td>
+										<td>556552</td>
+										<td>TestName</td>
+										<td>fyang_1121@gomarkets.com</td>
+										<td>362226198304222412</td>
+										<td>Not Uploaded</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>总计:</td>
+										<td colspan="15">$880</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<nav class="pageNav">
+							<ul class="pagination">
+								<li class="disabled">
+									<a href="javascript:" aria-label="Previous">«</a>
+								</li>
+								<li class="active">
+									<a href="javascript:">1</a>
+								</li>
+								<li class="">
+									<a href="javascript:">2</a>
+								</li>
+								<li class="">
+									<a href="javascript:">3</a>
+								</li>
+								<li class="">
+									<a href="javascript:">4</a>
+								</li>
+								<li class="">
+									<a href="javascript:">5</a>
+								</li>
+								<li class="">
+									<a href="javascript:">6</a>
+								</li>
+								<li class="">
+									<a href="javascript:">7</a>
+								</li>
+								<li class="ellipsis">...</li>
+								<li>
+									<a href="javascript:" aria-label="Previous">»</a>
+								</li>
+							</ul>
+							<span class="cols">cols: 
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+							</select>
+						</span>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<!--Close Positions-->
+					<div class="byLoginPositions">
+						<div class='pageTitle'>
+							<p class="pageTitBg">Close Positions</p>
+						</div>
+						<div class="table-responsive">
+							<!--表格-->
+							<table class="table table-hover table-striped" width="100%" height="100%">
+								<thead>
+									<tr>
+										<th>Deal<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+										<th class="no-sort">Login</th>
+										<th class="no-sort">Open Time</th>
+										<th class="no-sort">Type</th>
+										<th class="no-sort">Symbol</th>
+										<th class="no-sort">Volume</th>
+										<th class="no-sort">Open Price</th>
+										<th class="no-sort">S/L</th>
+										<th class="no-sort">T/P</th>
+										<th class="no-sort">Close Time</th>
+										<th class="no-sort">Close Price</th>
+										<th class="no-sort">Reason</th>
+										<th class="no-sort">Commission</th>
+										<th class="no-sort">Taxes</th>
+										<th class="no-sort">Agent</th>
+										<th class="no-sort">Swap</th>
+										<th class="no-sort">USD</th>
+										<th class="no-sort">Comment</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="">5056</a>
+										</td>
+										<td>556552</td>
+										<td>556552</td>
+										<td>TestName</td>
+										<td>fyang_1121@gomarkets.com</td>
+										<td>362226198304222412</td>
+										<td>Not Uploaded</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+										<td>Completed</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav class="pageNav">
+							<ul class="pagination">
+								<li class="disabled">
+									<a href="javascript:" aria-label="Previous">«</a>
+								</li>
+								<li class="active">
+									<a href="javascript:">1</a>
+								</li>
+								<li class="">
+									<a href="javascript:">2</a>
+								</li>
+								<li class="">
+									<a href="javascript:">3</a>
+								</li>
+								<li class="">
+									<a href="javascript:">4</a>
+								</li>
+								<li class="">
+									<a href="javascript:">5</a>
+								</li>
+								<li class="">
+									<a href="javascript:">6</a>
+								</li>
+								<li class="">
+									<a href="javascript:">7</a>
+								</li>
+								<li class="ellipsis">...</li>
+								<li>
+									<a href="javascript:" aria-label="Previous">»</a>
+								</li>
+							</ul>
+							<span class="cols">cols: 
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+							</select>
+						</span>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<!--Depost/Withdrawal-->
+					<div class="byLoginPositions">
+						<div class='pageTitle'>
+							<p class="pageTitBg">Depost/Withdrawal</p>
+						</div>
+						<div class="table-responsive">
+							<!--表格-->
+							<table class="table table-hover table-striped" width="100%" height="100%">
+								<thead>
+									<tr>
+										<th>Ticket<span><a href="javascript:" class="fa fa-sort"></a></span></th>
+										<th class="no-sort">Login</th>
+										<th class="no-sort">Date</th>
+										<th class="no-sort">Statistical type</th>
+										<th class="no-sort">Amonut$</th>
+										<th class="no-sort">Type</th>
+										<th class="no-sort">Comment</th>
+										<th class="no-sort">Operation Records</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="">5056</a>
+										</td>
+										<td>556552</td>
+										<td>556552</td>
+										<td>TestName</td>
+										<td>fyang_1121@gomarkets.com</td>
+										<td>362226198304222412</td>
+										<td>Not Uploaded</td>
+										<td>Completed</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav class="pageNav">
+							<ul class="pagination">
+								<li class="disabled">
+									<a href="javascript:" aria-label="Previous">«</a>
+								</li>
+								<li class="active">
+									<a href="javascript:">1</a>
+								</li>
+								<li class="">
+									<a href="javascript:">2</a>
+								</li>
+								<li class="">
+									<a href="javascript:">3</a>
+								</li>
+								<li class="">
+									<a href="javascript:">4</a>
+								</li>
+								<li class="">
+									<a href="javascript:">5</a>
+								</li>
+								<li class="">
+									<a href="javascript:">6</a>
+								</li>
+								<li class="">
+									<a href="javascript:">7</a>
+								</li>
+								<li class="ellipsis">...</li>
+								<li>
+									<a href="javascript:" aria-label="Previous">»</a>
+								</li>
+							</ul>
+							<span class="cols">cols: 
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+							</select>
+						</span>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<!--Operation Records-->
+					<div class="byLoginPositions">
+						<div class='pageTitle'>
+							<p class="pageTitBg">Operation Records</p>
+						</div>
+						<div class="table-responsive">
+							<!--表格-->
+							<table class="table table-hover table-striped" width="100%" height="100%">
+								<thead>
+									<tr>
+										<th class="no-sort">Date</th>
+										<th class="no-sort">Comment</th>
+										<th class="no-sort">Operation Records</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>TestName</td>
+										<td>fyang_1121@gomarkets.com</td>
+										<td>362226198304222412</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav class="pageNav">
+							<ul class="pagination">
+								<li class="disabled">
+									<a href="javascript:" aria-label="Previous">«</a>
+								</li>
+								<li class="active">
+									<a href="javascript:">1</a>
+								</li>
+								<li class="">
+									<a href="javascript:">2</a>
+								</li>
+								<li class="">
+									<a href="javascript:">3</a>
+								</li>
+								<li class="">
+									<a href="javascript:">4</a>
+								</li>
+								<li class="">
+									<a href="javascript:">5</a>
+								</li>
+								<li class="">
+									<a href="javascript:">6</a>
+								</li>
+								<li class="">
+									<a href="javascript:">7</a>
+								</li>
+								<li class="ellipsis">...</li>
+								<li>
+									<a href="javascript:" aria-label="Previous">»</a>
+								</li>
+							</ul>
+							<span class="cols">cols: 
+							<select name="" id="">
+								<option value="">5</option>
+								<option value="">10</option>
+							</select>
+						</span>
+						</nav>
+						<div class="clear"></div>
+					</div>
+
+				</div>
+				<footer>2019 © IB Portfolio by Go Markets.</footer>
+			</div>
+
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+		<script>
+			$(function() {
+				$(".chosen").attr("disabled", true);
+				$(".enableEdit").on("click", function() {
+					$(".chosen").attr("disabled", false);
+					$(".chosen").siblings(".chzn-container").removeClass("chzn-disabled");
+					var chosen = $("#chosen1").attr("disabled");
+					if(chosen == "disabled") {
+						$(chosen).prop('disabled', true).trigger("chosen:updated");
+						//					$(this).html("<i class='fa fa-lock'></i>Locking")
+
+					} else {
+						$(chosen).prop('disabled', false);
+						//					$(this).html("<i class='fa fa-edit'></i>Edit")
+					}
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

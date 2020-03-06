@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/cropper.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 8]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="#">
+												<div class="left-element"><i class="fa fa-warning color-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Jane Doe</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html" class="linkChecked">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="content animated fadeInRight">
+				<div class="wrap">
+					<div class="content-header">
+						<h2>Customer Detailed Information</h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="Defaults.html"><i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>
+								<a href="AccountList.html">AccountList</a>
+							</li>
+							<li>Edit</li>
+						</ul>
+					</div>
+					<div class="content-body">
+						<form action="" class="">
+							<div class="row">
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">ID Code:</label>
+										<input type="text" value="Test Name" class="form-control" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">User ID:</label>
+										<input type="text" class="form-control" id="" value="User ID" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Name:</label>
+										<input type="text" class="form-control" id="" value="Test Name" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Phone:</label>
+										<input type="text" class="form-control" id="" value="+86.1584255555" disabled="disabled" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Email:</label>
+										<input type="text" class="form-control" id="" value="555555@qq.com" />
+									</div>
+									<p class="help-block">dddddddddd</p>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">性别:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value=""></option>
+											<option value="Category 1">男</option>
+											<option value="Category 2">女</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Date of Birth:</label>
+										<div class="dateInput">
+											<input type="text" readonly="readonly" id="dp1" data-date-format="yyyy-mm-dd" value="Choose Date" class="form-control" />
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Country:</label>
+										<input type="text" class="form-control" id="" value="中国" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Provinces:</label>
+										<input type="text" class="form-control" id="" value="上海" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">City:</label>
+										<input type="text" class="form-control" id="" value="黄浦" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Address:</label>
+										<input type="text" class="form-control" id="" value="打浦路15号" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Zip Code:</label>
+										<input type="text" class="form-control" id="" value="000" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">ID type:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value=""></option>
+											<option value="Category 1">其它</option>
+											<option value="Category 2">身份证</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">ID number:</label>
+										<input type="text" class="form-control" id="" value="+86.1584255555" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">基础货币:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value=""></option>
+											<option value="Category 1">其它</option>
+											<option value="Category 2">身份证</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">账户类型:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value=""></option>
+											<option value="Category 1">其它</option>
+											<option value="Category 2">身份证</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">推荐人:</label>
+										<input type="text" class="form-control" id="" value="Test Name" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">中文名:</label>
+										<input type="text" class="form-control" id="" value="Test Name" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Status:</label>
+										<input type="text" class="form-control" id="" value="1" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">职业:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value=""></option>
+											<option value="">11</option>
+											<option value="">11</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">是否为美国公民或美国税收居民:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">您的税前年收入大约是:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">您的净资产大约是:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">收入来源:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">是否有过相关金融产品的交易经验:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">过去12个月您是否担任公职:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Group:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Brand:</label>
+										<input type="text" class="form-control" id="" value="" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">IB brand:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Sub IB brand:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Sub2 IB brand:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Sub3 IB brand:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Sub4 IB brand:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Promotion Code:</label>
+										<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="row editCheck">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<label for="">选择交易种类:</label>
+										<p><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check3" /></span><label for="check3">外汇保证金交易和差价合约</label></p>
+										<p><span class="piaochecked disabled"><input class="chekUpdate" type="checkbox" id="check4" /></span><label for="check4">二元期权</label></p>
+									</div>
+								</div>
+
+								<div class="col-lg-9">
+									<div class="form-group Accepted">
+										<label for="">确认并接受的协议:</label>
+										<p><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check5" /></span><label for="check5">我确认在此申请中所提供的都是真实正确的信息</label><em>Test Accepted by PIN on 13/02/2019 17:18:53 AEST</em></p>
+										<p><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check6" /></span><label for="check6">我理解外汇交易和和差价合约保证金交易含有较高损失风险</label><em>Test Accepted by PIN on 13/02/2019 17:18:53 AEST</em></p>
+										<p><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check7" /></span><label for="check7">本人/吾等接受并确认 GO MARKETS 向介绍人支付介绍费</label><em>Test Accepted by PIN on 13/02/2019 17:18:53 AEST</em></p>
+										<p><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check8" /></span><label for="check8">我承诺账户只用于本人的交易和操作，不被第三方使用</label><em>Test Accepted by PIN on 13/02/2019 17:18:53 AEST</em></p>
+										<p><span class="piaochecked"><input class="chekUpdate" type="checkbox" id="check9" /></span><label for="check9">我已阅读，理解并同意接受</label><em>Test Accepted by PIN on 13/02/2019 17:18:53 AEST</em></p>
+
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Name:</label>
+										<input type="text" class="form-control" id="" value="余大迎" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">Phone:</label>
+										<input type="text" class="form-control" id="" value="1584455884545" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<div class="form-group">
+										<label for="">ID Number:</label>
+										<input type="text" class="form-control" id="" value="2304548787454" />
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2 m-center">
+									<div class="form-group">
+										<button type="button" class="btn btn-search btn-sm mT17"><i class="fa fa-check"></i>Check Phone</button>
+										<span class="help-block">信息一致!!</span>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-2 m-center">
+									<div class="form-group">
+										<button class="btn btn-sm btn-search  mT17"><i class="fa fa-check"></i>Check ID Number</button>
+										<span class="help-block">信息一致</span>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-md-6">
+									<div class="box-content">
+										<h4 class="box-title">检查结果</h4>
+										<ul class="sub-menu">
+											<li>验证结果:</li>
+											<li>身份证号:<span>430527199108062555</span></li>
+											<li>身份证名字:</li>
+											<li>省 / 直辖市:</li>
+											<li>城市:</li>
+											<li>区县:</li>
+											<li>性别:</li>
+											<li>出生年月:</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box-content" style="min-height:285px;overflow:auto;">
+										<h4 class="box-title">检查后头像</h4>
+										<div style="text-align: center;">
+											<img src="" alt="" style="width: 50%;" />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="box-content">
+										<h4 class="box-title">身份证正面</h4>
+										<!--上传-->
+										<div class="cropper" data-toggle="modal" data-target="#cropperModal" onclick="test('finalImg')">
+											<input type="hidden" id="imgId" />
+											<img id="finalImg" src="images/upload.jpg" class="img-responsive">
+										</div>
+										<!--上传 end-->
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="box-content">
+										<h4 class="box-title">身份证反面</h4>
+										<!--上传-->
+										<div class="cropper" data-toggle="modal" data-target="#cropperModal" onclick="test('finalImg2')">
+											<img id="finalImg2" src="images/upload.jpg" class="img-responsive">
+										</div>
+										<!--上传 end-->
+									</div>
+								</div>
+
+							</div>
+
+							<hr />
+							<div class="row">
+								<div class="col-md-6">
+									<label for="">Operation Records:</label>
+									<div class="commentTable">
+										<table class="table table-striped table-hover" width="100%" height="100%">
+											<thead>
+												<tr>
+													<th>Date
+														<a href="javascript:" class="fa fa-sort"></a>
+													</th>
+													<th class="no-sort">Comment</th>
+													<th class="no-sort">Operation By</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>ssss</td>
+													<td>sss</td>
+													<td>s</td>
+												</tr>
+												<tr>
+													<td>sss</td>
+													<td>sss</td>
+													<td>ww</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="form-group col-md-9">
+											<label for="">Comment:</label>
+											<textarea name="" rows="" cols="" class="form-control"></textarea>
+										</div>
+										<div class="col-md-3 mT22 text-center">
+											<button class="btn btn-sm btn-search"><i class="fa fa-check"></i>Add</button>
+											<span class="help-block">信息一致!!</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<label for="" class="control-label col-md-3 col-lg-1">Account Type:</label>
+								<div class="col-md-4 col-lg-2">
+									<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+										<option value="">Need ID</option>
+										<option value="Category 1">Pending</option>
+										<option value="Category 2">Duplicates</option>
+										<option value="">Disabled</option>
+										<option value="">Opened</option>
+									</select>
+								</div>
+								<div class="col-md-4 col-lg-2">
+									<label for="" class="visible-xs visible-sm">&nbsp;</label>
+									<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+										<option value="">永久禁止该证件注册</option>
+										<option value="">禁止当前IP一个月</option>
+										<option value="">不禁止</option>
+									</select>
+								</div>
+							</div>
+
+							<hr />
+							<div class="text-center">
+								<button class="btn btn-sm btn-search"><i class="fa fa-check"></i>Save</button>
+								<button class="btn btn-sm btn-search"><i class="fa fa-refresh"></i>Reset</button>
+								<button class="btn btn-sm btn-search hidden-xs"><i class="fa fa-share-square-o"></i>Export PDF</button>
+								<span class="help-block">信息一致!!</span>
+							</div>
+						</form>
+					</div>
+				</div>
+				<footer>2020 © IB Portfolio by Go Markets.</footer>
+			</div>
+
+		</div>
+
+		<!--模态框-->
+		<div class="modal fade" id="cropperModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<label title="上传图片" for="chooseImg" class="btn btn-search btn-sm">
+							<input type="file" accept="image/jpg,image/jpeg,image/png" name="file" id="chooseImg" class="hidden" onChange="selectImg(this)">
+							 选择图片
+                		</label>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<!--图片裁剪框 start-->
+							<div class="tailoring-content">
+								<div class="tailoring-content-two">
+									<div class="tailoring-box-parcel col-sm-12">
+										<img id="tailoringImg">
+									</div>
+									<div class="preview-box-parcel hidden-xs hidden-sm">
+										<p>图片预览：</p>
+										<div class="square previewImg"></div>
+									</div>
+								</div>
+								<div class="tailoring-content-three">
+									<button class="btn btn-success cropper-rotate-btnL" type="button"><i class="fa fa-rotate-left"></i></button>
+									<button class="btn btn-success cropper-rotate-btn" type="button"><i class="fa fa-rotate-right"></i></button>
+									<button class="btn btn-success cropper-scaleX-btn" type="button"><i class="fa fa-arrows-h"></i></button>
+								</div>
+							</div>
+							<!--图片裁剪框 end-->
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-sm btn-success " data-dismiss="modal"><i class="fa fa-close"></i>取消</button>
+						<button class="btn btn-success btn-sm" id="sureCut" type="button" data-dismiss="modal">确定<i class="fa fa-angle-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框 end-->
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!---->
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+		<script>
+			//2018.3.29新增
+			$(".editCheck span.disabled").removeClass("piaochecked").addClass("checkDisabled").parent().find("label").removeAttr("for");
+		</script>
+
+		<script src="js/cropper.min.js"></script>
+		<script type="text/javascript">
+			//			清空已经上传过的图片
+			$("#cropperModal").on("hide.bs.modal", function() {     //获得点击打开的按钮 
+				$(".cropper-container").remove();
+				$(".previewImg").children("img").remove();
+			});
+
+			function test(imgId) {
+				$("#imgId").val(imgId);
+				$("#chooseImg").attr("type", "file"); //打开模态框时 上传按钮更改回 type="file""
+			}
+			//图像上传
+			function selectImg(file) {
+				if(!file.files || !file.files[0]) {
+					return;
+				}
+				// 创建一个reader
+				const reader = new FileReader()
+				const that = this;
+				// 读取成功后的回调
+				reader.onloadend = function() {
+					const result = this.result
+					const img = new Image()
+					img.src = result
+					img.onload = function() {
+						const data = compress(img, 0.5) // - 图片质量:取值范围为0到1
+						var imgSrc = data
+						imgArtwork = data
+						var replaceSrc = imgSrc;
+						$('#tailoringImg').cropper('replace', replaceSrc, false); //默认false，适应高度，不失真
+					}
+				}
+				reader.readAsDataURL(file.files[0]);
+				$("#chooseImg").attr("type", "text"); //选择完文件后 模态框的上传按钮更改为 type="text"
+			}
+
+			//cropper图片裁剪
+			$('#tailoringImg').cropper({
+				aspectRatio: NaN,
+				preview: '.previewImg', //预览视图
+				guides: false, //裁剪框的虚线(九宫格)
+				autoCropArea: 0.5, //0-1之间的数值，定义自动剪裁区域的大小，默认0.8
+				movable: false, //是否允许移动图片
+				dragCrop: true, //是否允许移除当前的剪裁框，并通过拖动来新建一个剪裁框区域
+				movable: true, //是否允许移动剪裁框
+				resizable: true, //是否允许改变裁剪框的大小
+				zoomable: false, //是否允许缩放图片大小
+				mouseWheelZoom: false, //是否允许通过鼠标滚轮来缩放图片
+				touchDragZoom: true, //是否允许通过触摸移动来缩放图片
+				rotatable: true, //是否允许旋转图片
+				crop: function(e) {
+					//					alert("shj);
+				}
+			});
+			//向右旋转
+			$(".cropper-rotate-btn").on("click", function() {
+				$('#tailoringImg').cropper("rotate", 45);
+			});
+			//向左旋转
+			$(".cropper-rotate-btnL").on("click", function() {
+				$('#tailoringImg').cropper("rotate", -45);
+			});
+			//换向
+			var flagX = true;
+			$(".cropper-scaleX-btn").on("click", function() {
+				if(flagX) {
+					$('#tailoringImg').cropper("scaleX", -1);
+					flagX = false;
+				} else {
+					$('#tailoringImg').cropper("scaleX", 1);
+					flagX = true;
+				}
+				flagX != flagX;
+			});
+
+			//裁剪后的处理
+			$("#sureCut").on("click", function() {
+				if($(".previewImg img").attr("src") == null) {
+					alert("图片不能为空");
+					return false;
+				} else {
+					var cas = $('#tailoringImg').cropper('getCroppedCanvas'); //获取被裁剪后的canvas
+					var base64url = cas.toDataURL('image/png'); //转换为base64地址形式
+					$("#" + $("#imgId").val()).prop("src", base64url); //显示为图片的形式
+				}
+			});
+
+			// 压缩图片
+			function compress(img, compressNum) {
+				const canvas = document.createElement('canvas')
+				const ctx = canvas.getContext('2d')
+				const width = img.width
+				const height = img.height
+				canvas.width = width
+				canvas.height = height
+				// 铺底色
+				ctx.fillStyle = '#fff'
+				ctx.fillRect(0, 0, canvas.width, canvas.height)
+				ctx.drawImage(img, 0, 0, width, height)
+				// 进行压缩 compressNum - 图片质量:取值范围为0到1
+				const ndata = canvas.toDataURL('image/jpeg', compressNum)
+				return ndata
+			}
+		</script>
+	</body>
+
+</html>

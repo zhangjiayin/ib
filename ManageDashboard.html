@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en" class="fixed left-sidebar-collapsed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="css/ManageDashboard.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="#">
+												<div class="left-element"><i class="fa fa-warning color-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Test Name</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html" class="linkChecked">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="content animated fadeInRight">
+				<div class="wrap">
+					<div class="dashboard row">
+						<div class="col-md-3">
+							<div class="left arrLeft">
+								<div class="item">
+									<p>
+										<span>LEFT</span>
+										<input type="button" value="Add" class="add" />
+										<input type="button" disabled="disabled" value="Delete" class="subDelete" />
+										<input type="button" id="save_left" value="Save" />
+									</p>
+									<ul id="LEFT-BOX">
+										{#
+										<li class="itemList itemListPop3">#} {#
+											<p>ASX200-Client PnL</p>#} {# <span class="itemSpan">$<i>0</i></span>#} {# </li>#} {#
+										<li class="itemList itemListPop2">#} {#
+											<p>ASX200-Client PnL</p>#} {# <span class="itemSpan">$<i>0</i></span>#} {# </li>#} {#
+										<li class="itemList itemListPop1">#} {#
+											<p>ASX200-Client PnL</p>#} {# <span class="itemSpan">$<i>0</i></span>#} {# </li>>#}
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="middle">
+								<p>Manager Dashboard
+									<input type="button" value="Add" class="ChartAdd btn btn-xs" />
+									<input type="button" disabled="disabled" value="Delete" class="ChartDel" />
+									<input type="button" value="Save" />
+								</p>
+								<ul id="chartWrap"></ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="right arrRight">
+								<div class="item">
+									<p>
+										<span>RIGHT</span>
+										<input type="button" value="Add" class="add" />
+										<input type="button" disabled="disabled" value="Delete" class="subDelete" />
+										<input id="save_right" type="button" value="Save" />
+									</p>
+									<ul id="RIGHT-BOX">
+										{#
+										<li class="itemList itemListPop1">#} {#
+											<p>ASX200-Client PnL</p>#} {# <span class="itemSpan">$<i>19,385</i></span>#} {# </li>#} {#
+										<li class="itemList itemListPop2">#} {#
+											<p>ASX200-Client PnL</p>#} {# <span class="itemSpan">$<i>0</i></span>#} {# </li>#} {#
+										<li class="itemList itemListPop3">#} {#
+											<p>ASX200-Client PnL</p>#} {# <span class="itemSpan">$<i>-2555</i></span>#} {# </li>#}
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+				<footer>2019 © IB Portfolio by Go Markets.</footer>
+			</div>
+
+		</div>
+
+		<div class="popBg">
+
+			<div class="popDiv">
+				<div>
+					<div id="name_pop">
+						<p class="L">name: <input type="text" placeholder="name" /></p>
+					</div>
+					<hr />
+					<table id="tab11" style="display:none">
+						<tbody>
+							<tr>
+								<td>
+									<input type="button" name="NO" size="2" disabled="disabled" />
+								</td>
+								<td>
+									<select name="" class="s1"></select>
+								</td>
+								<td>
+									<select name="" class="s2" disabled="disabled"></select>
+								</td>
+								<td>
+									<input type="text" placeholder="" />
+								</td>
+								<td>
+									<input type="button" onClick="deltr(this)" value="Delete">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<input type="button" id="btn_addtr" value="Add">
+					<div class="popHide">
+						<table id="dynamicTable" border="0" cellspacing="0" cellpadding="0">
+							<thead></thead>
+							<tbody id="pop_body_r">
+								<tr>
+									<td>
+										<input type="button" name="NO" size="2" value="R1" disabled="disabled" />
+									</td>
+									<td>
+										<select name="" class="sn1">
+											<option value="0">-select-</option>
+											<option value="LOGIN" selected>LOGIN</option>
+											<option value="SYMBOL">SYMBOL</option>
+											<option value="GROUP">GROUP</option>
+											<option value="SERVER">SEVER</option>
+										</select>
+									</td>
+									<td>
+										<select name="" class="sn2">
+											<option value="0">-select-</option>
+											<option value="EQUAL" selected>EQUAL</option>
+											<option value="NOT EQUAL">NOT EQUAL</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" placeholder="" />
+									</td>
+									<td>
+										<input type="button" onClick="deltr(this)" value="Delete">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="button" name="NO" size="2" value="R2" disabled="disabled" />
+									</td>
+									<td>
+										<select name="s1" class="sn1">
+											<option value="0">-select-</option>
+											<option value="LOGIN">LOGIN</option>
+											<option value="SYMBOL" selected>SYMBOL</option>
+											<option value="GROUP">GROUP</option>
+											<option value="SERVER">SEVER</option>
+										</select>
+									</td>
+									<td>
+										<select name="s2" class="sn2">
+											<option value="0">-select-</option>
+											<option value="EQUAL" selected>EQUAL</option>
+											<option value="NOT EQUAL">NOT EQUAL</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" placeholder="" />
+									</td>
+									<td>
+										<input type="button" onClick="deltr(this)" value="Delete">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="button" name="NO" size="2" value="R3" disabled="disabled" />
+									</td>
+									<td>
+										<select name="s1" class="sn1">
+											<option value="0">-select-</option>
+											<option value="LOGIN">LOGIN</option>
+											<option value="SYMBOL">SYMBOL</option>
+											<option value="GROUP" selected>GROUP</option>
+											<option value="SERVER">SEVER</option>
+										</select>
+									</td>
+									<td>
+										<select name="s2" class="sn2">
+											<option value="0">-select-</option>
+											<option value="EQUAL" selected>EQUAL</option>
+											<option value="NOT EQUAL">NOT EQUAL</option>
+											<option value="BEGIN WITH">BEGIN WITH</option>
+											<option value="NOT BEGIN WITH">NOT BEGIN WITH</option>
+											<option value="END WITH">END WITH</option>
+											<option value="NOT END WITH">NOT END WITH</option>
+											<option value="MID">MID</option>
+											<option value="NOT MID">NOT MID</option>
+											<option value="CUSTOM">COSTOM</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" placeholder="123" />
+									</td>
+									<td>
+										<input type="button" onClick="deltr(this)" value="Delete">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<hr />
+				<div>
+					<table id="tab12" style="display: none">
+						<tbody>
+							<tr>
+								<td>
+									<input type="button" name="NO" size="2" value="H1" />
+								</td>
+								<td>
+									<select name="" class="sg1"></select>
+								</td>
+								<td>
+									<select name="" class="sg2" disabled="disabled"></select>
+								</td>
+								<td>
+									<input type="text" placeholder="" />
+								</td>
+								<td>
+									<input type="button" onClick="deltr2(this)" value="Delete">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<input type="button" id="btn_addtr1" value="Add">
+					<div class="popHide2">
+						<table id="dynamicTable2" border="0" cellspacing="0" cellpadding="0">
+							<thead></thead>
+							<tbody id="pop_body_h">
+								<tr>
+									<td>
+										<input type="button" name="NO" size="2" value="H1" />
+									</td>
+									<td>
+										<select name="" class="sgn1">
+											<option value="0">-select-</option>
+											<option value="LOGIN" selected>LOGIN</option>
+											<option value="SYMBOL">SYMBOL</option>
+											<option value="GROUP">GROUP</option>
+											<option value="SERVER">SEVER</option>
+										</select>
+									</td>
+									<td>
+										<select name="" class="sgn2">
+											<option value="0">-select-</option>
+											<option value="EQUAL" selected>EQUAL</option>
+											<option value="NOT EQUAL">NOT EQUAL</option>
+											<option value="BEGIN WITH">BEGIN WITH</option>
+											<option value="NOT BEGIN WITH">NOT BEGIN WITH</option>
+											<option value="END WITH">END WITH</option>
+											<option value="NOT END WITH">NOT END WITH</option>
+											<option value="MID">MID</option>
+											<option value="NOT MID">NOT MID</option>
+											<option value="CUSTOM">COSTOM</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" placeholder="123" />
+									</td>
+									<td>
+										<input type="button" onClick="deltr2(this)" value="Delete">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="button" name="NO" size="2" value="H2" />
+									</td>
+									<td>
+										<select name="" class="sgn1">
+											<option value="0">-select-</option>
+											<option value="LOGIN">LOGIN</option>
+											<option value="SYMBOL" selected="selected">SYMBOL</option>
+											<option value="GROUP">GROUP</option>
+											<option value="SERVER">SEVER</option>
+										</select>
+									</td>
+									<td>
+										<select name="" class="sgn2">
+											<option value="0">-select-</option>
+											<option value="EQUAL" selected>EQUAL</option>
+											<option value="NOT EQUAL">NOT EQUAL</option>
+											<option value="BEGIN WITH">BEGIN WITH</option>
+											<option value="NOT BEGIN WITH">NOT BEGIN WITH</option>
+											<option value="END WITH">END WITH</option>
+											<option value="NOT END WITH">NOT END WITH</option>
+											<option value="MID">MID</option>
+											<option value="NOT MID">NOT MID</option>
+											<option value="CUSTOM">COSTOM</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" placeholder="123" />
+									</td>
+									<td>
+										<input type="button" onClick="deltr2(this)" value="Delete">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<hr />
+				<div class="L" id="LL">&nbsp;&nbsp;&nbsp;&nbsp;L:<input type="text" placeholder="" /></div>
+				<hr />
+				<div class="popBtn">
+					<input type="button" value="OK" />
+					<input type="button" value="CANCEL" />
+				</div>
+			</div>
+
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!----->
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+
+		<!--本页面需要用到的-->
+		<script src="js/drag-arrange.js"></script>
+		<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+		<!--<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>-->
+		<script src="js/chartOperation.js"></script>
+		<script src="js/ManageDashboard.js"></script>
+		<!--本页面需要用到的-->
+		<script>
+			if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+				$("body").find("div").removeClass("arrLeft");
+				$("body").find("div").removeClass("arrRight");
+			} else {}
+		</script>
+		<!--10.30新增-->
+		<script>
+			//  移动端弹框
+			var timeOutEvent = 0;
+			$(function() {
+				$(".itemList").on({
+					touchstart: function() {
+						timeOutEvent = setTimeout("longPress()", 500);
+					},
+					touchmove: function() {
+						clearTimeout(timeOutEvent);
+						timeOutEvent = 0;
+					},
+					touchend: function() {
+						clearTimeout(timeOutEvent);
+						if(timeOutEvent != 0) {
+							$(this).addClass("bor").siblings().removeClass("bor");
+							$(this).parent().prev().find(".subDelete").removeAttr("disabled");
+						}
+						return false;
+					}
+				});
+			});
+
+			function longPress() {
+				timeOutEvent = 0;
+				$(".popBg").show();
+				$(".popDiv").fadeIn();
+			};
+			//  移动端弹框end
+		</script>
+		<!--10.30新增 end-->
+	</body>
+
+</html>

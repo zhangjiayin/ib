@@ -1,0 +1,2200 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/jqueryConfirm.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="javascript:">
+												<div class="left-element"><i class="fa fa-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Test Name</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html" class="linkChecked">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="content animated fadeInRight">
+				<div class="wrap">
+					<div class="content-header">
+						<h2>Sales Leads<small class="hidden-xs">Upload Sales Leads</small></h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="Defaults.html"><i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>Sales Leads</li>
+						</ul>
+					</div>
+					<div class="pageTitle">
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>Upload Sales List</p>
+						<div class="container-fluid">
+							<form action="#">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="modal-file">请选择要导入的Sales文件：
+											<input id="btnImport_file" type="file" name="btnImport_file" accept=".xlsx">
+										</div>
+										<p>&nbsp;</p>
+										<a style="display:inline-block;" href="/ExportFile/SalesUploadTemplate.xlsx" target="_blank">下载EXCEL模板</a>
+										<span id="modalfooterSpan" style="color: red;"></span>
+										<p>&nbsp;</p>
+										<button type="button" class="btn btn-xs btn-search" onclick="SalesUpload()"><i class="fa fa-upload"></i>Upload</button>
+									</div>
+								</div>
+								<br />
+							</form>
+						</div>
+					</div>
+					<div id="divSalesLeads">
+						<div class="table-responsive">
+							<table class="table table-hover table-striped" width="100%" height="100%" id="newdatatable">
+								<thead>
+									<tr>
+										<th>OP</th>
+										<th>Name<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Mobile<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>State/Province<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>City<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Duration<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Lead Source<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Lead Owner<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Sales Owner<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Status<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+								<tfoot>
+									<tr>
+										<td>
+											<a href="javascript:" id="selectAll">All</a>
+											<a href="javascript:" id="reverse" style="margin-left:8px">Reverse</a>
+											<a href="javascript:" id="unSelect" style="margin-left:8px">Clear</a>
+										</td>
+										<td colspan="9">
+											<div class="pull-left">
+												<label for="">Sales Owner:</label>
+												<select name="sales" data-placeholder="Choose a Sales" tabindex="1">
+													<option></option>
+													<option value="Allen Jia">Allen Jia</option>
+													<option value="Khim K">Khim K</option>
+													<option value="Damian Li">Damian Li</option>
+													<option value="CoCo Pan">CoCo Pan</option>
+													<option value="Ryan Xie">Ryan Xie</option>
+													<option value="Robin Gao">Robin Gao</option>
+													<option value="Lucy Jin">Lucy Jin</option>
+													<option value="Elvis Xu">Elvis Xu</option>
+													<option value="Sunny Song">Sunny Song</option>
+													<option value="Hans Shao">Hans Shao</option>
+													<option value="Ena He">Ena He</option>
+													<option value="Melody Liu">Melody Liu</option>
+													<option value="Marke Zhou">Marke Zhou</option>
+													<option value="Andrew He">Andrew He</option>
+													<option value="Jacky Wang">Jacky Wang</option>
+													<option value="Feiler Fang">Feiler Fang</option>
+													<option value="Candy Tang">Candy Tang</option>
+													<option value="Joan Huang">Joan Huang</option>
+													<option value="Mike Huang">Mike Huang</option>
+													<option value="Gordon Wang">Gordon Wang</option>
+												</select>
+												<button class="btn btn-search btn-xs" id="AllChange">Upload To Salesforce</button>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<nav class="pageNav"></nav>
+
+						<div class="clear"></div>
+
+					</div>
+
+					<div id="divSuploadalesLeads">
+						<div class="table-responsive">
+							<table class="table" width="100%" height="100%" id="newdatatable">
+								<thead>
+									<tr>
+										<th>OP</th>
+										<th>Name<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Mobile<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>State/Province<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>City<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Duration<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Lead Source<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Lead Owner<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Sales Owner<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Status<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Upload Time<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" id="64131" disabled value="64131" /></td>
+										<td>None None</td>
+										<td>
+											18095656009
+										</td>
+										<td></td>
+										<td>
+											合肥
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64146" disabled value="64146" /></td>
+										<td>None None</td>
+										<td>
+											15313710790
+										</td>
+										<td></td>
+										<td>
+											北京
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64138" disabled value="64138" /></td>
+										<td>None None</td>
+										<td>
+											18017254152
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64134" disabled value="64134" /></td>
+										<td>None None</td>
+										<td>
+											18971273781
+										</td>
+										<td></td>
+										<td>
+											武汉
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64132" disabled value="64132" /></td>
+										<td>None None</td>
+										<td>
+											18910953828
+										</td>
+										<td></td>
+										<td>
+											北京
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64141" disabled value="64141" /></td>
+										<td>None None</td>
+										<td>
+											18917924550
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64139" disabled value="64139" /></td>
+										<td>None None</td>
+										<td>
+											18917539102
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64130" disabled value="64130" /></td>
+										<td>None None</td>
+										<td>
+											15300066583
+										</td>
+										<td></td>
+										<td>
+											北京
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64147" disabled value="64147" /></td>
+										<td>None None</td>
+										<td>
+											13328786895
+										</td>
+										<td></td>
+										<td>
+											武汉
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64145" disabled value="64145" /></td>
+										<td>None None</td>
+										<td>
+											18189568453
+										</td>
+										<td></td>
+										<td>
+											兰州
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64135" disabled value="64135" /></td>
+										<td>None None</td>
+										<td>
+											18909513300
+										</td>
+										<td></td>
+										<td>
+											银川
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64133" disabled value="64133" /></td>
+										<td>None None</td>
+										<td>
+											18935185473
+										</td>
+										<td></td>
+										<td>
+											太原
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64129" disabled value="64129" /></td>
+										<td>None None</td>
+										<td>
+											18005717411
+										</td>
+										<td></td>
+										<td>
+											石家
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64137" disabled value="64137" /></td>
+										<td>None None</td>
+										<td>
+											18916143596
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64142" disabled value="64142" /></td>
+										<td>None None</td>
+										<td>
+											18939259156
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64140" disabled value="64140" /></td>
+										<td>None None</td>
+										<td>
+											18985019983
+										</td>
+										<td></td>
+										<td>
+											贵阳
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64136" disabled value="64136" /></td>
+										<td>None None</td>
+										<td>
+											18049709772
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64128" disabled value="64128" /></td>
+										<td>None None</td>
+										<td>
+											18001284819
+										</td>
+										<td></td>
+										<td>
+											天津
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64148" disabled value="64148" /></td>
+										<td>None None</td>
+										<td>
+											13372529631
+										</td>
+										<td></td>
+										<td>
+											杭州
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64144" disabled value="64144" /></td>
+										<td>None None</td>
+										<td>
+											18091422989
+										</td>
+										<td></td>
+										<td>
+											商洛
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64143" disabled value="64143" /></td>
+										<td>None None</td>
+										<td>
+											13386281860
+										</td>
+										<td></td>
+										<td>
+											上海
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64127" disabled value="64127" /></td>
+										<td>None None</td>
+										<td>
+											18100185510
+										</td>
+										<td></td>
+										<td>
+											杭州
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64126" disabled value="64126" /></td>
+										<td>None None</td>
+										<td>
+											18087234425
+										</td>
+										<td></td>
+										<td>
+											昆明
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64125" disabled value="64125" /></td>
+										<td>None None</td>
+										<td>
+											18069942761
+										</td>
+										<td></td>
+										<td>
+											金华
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64123" disabled value="64123" /></td>
+										<td>None None</td>
+										<td>
+											13301242680
+										</td>
+										<td></td>
+										<td>
+											北京
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="64124" disabled value="64124" /></td>
+										<td>None None</td>
+										<td>
+											18072939686
+										</td>
+										<td></td>
+										<td>
+											杭州
+										</td>
+										<td>0</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2019/05/06 17:01:15</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="2" disabled value="2" /></td>
+										<td>None None</td>
+										<td>
+											18946757940
+										</td>
+										<td>吉林</td>
+										<td>
+											长春市
+										</td>
+										<td>120255</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="3" disabled value="3" /></td>
+										<td>None None</td>
+										<td>
+											18919313761
+										</td>
+										<td>甘肃</td>
+										<td>
+											兰州市
+										</td>
+										<td>120160</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="5" disabled value="5" /></td>
+										<td>None None</td>
+										<td>
+											18198688768
+										</td>
+										<td>贵州</td>
+										<td>
+											黔南布依族苗族自治州
+										</td>
+										<td>76831</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="6" disabled value="6" /></td>
+										<td>None None</td>
+										<td>
+											15321201307
+										</td>
+										<td>北京</td>
+										<td>
+											北京市
+										</td>
+										<td>65523</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="8" disabled value="8" /></td>
+										<td>None None</td>
+										<td>
+											13304698828
+										</td>
+										<td>黑龙江</td>
+										<td>
+											大庆
+										</td>
+										<td>65292</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="9" disabled value="9" /></td>
+										<td>None None</td>
+										<td>
+											13313911443
+										</td>
+										<td>福建</td>
+										<td>
+											泉州市
+										</td>
+										<td>65205</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="11" disabled value="11" /></td>
+										<td>None None</td>
+										<td>
+											18168720515
+										</td>
+										<td>江苏</td>
+										<td>
+											苏州市
+										</td>
+										<td>65163</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="12" disabled value="12" /></td>
+										<td>None None</td>
+										<td>
+											15374097855
+										</td>
+										<td>广东</td>
+										<td>
+											广州
+										</td>
+										<td>65153</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="13" disabled value="13" /></td>
+										<td>None None</td>
+										<td>
+											13333631980
+										</td>
+										<td>江苏</td>
+										<td>
+											苏州市
+										</td>
+										<td>65142</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="14" disabled value="14" /></td>
+										<td>None None</td>
+										<td>
+											18050817835
+										</td>
+										<td>福建</td>
+										<td>
+											泉州市
+										</td>
+										<td>62346</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="15" disabled value="15" /></td>
+										<td>None None</td>
+										<td>
+											18009587854
+										</td>
+										<td>宁夏</td>
+										<td>
+											银川市
+										</td>
+										<td>58613</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="16" disabled value="16" /></td>
+										<td>None None</td>
+										<td>
+											18033969637
+										</td>
+										<td>福建</td>
+										<td>
+											宁德市
+										</td>
+										<td>56948</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="18" disabled value="18" /></td>
+										<td>None None</td>
+										<td>
+											15389367998
+										</td>
+										<td>陕西</td>
+										<td>
+											咸阳市
+										</td>
+										<td>38949</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="19" disabled value="19" /></td>
+										<td>None None</td>
+										<td>
+											13391584267
+										</td>
+										<td>北京</td>
+										<td>
+											北京市
+										</td>
+										<td>35540</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="20" disabled value="20" /></td>
+										<td>None None</td>
+										<td>
+											13371780978
+										</td>
+										<td>北京</td>
+										<td>
+											北京市
+										</td>
+										<td>33531</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="21" disabled value="21" /></td>
+										<td>None None</td>
+										<td>
+											13313294780
+										</td>
+										<td>河北</td>
+										<td>
+											唐山市
+										</td>
+										<td>31422</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="23" disabled value="23" /></td>
+										<td>None None</td>
+										<td>
+											13303037548
+										</td>
+										<td>河北</td>
+										<td>
+											石家庄市
+										</td>
+										<td>31067</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="24" disabled value="24" /></td>
+										<td>None None</td>
+										<td>
+											13372136930
+										</td>
+										<td>江苏</td>
+										<td>
+											苏州市
+										</td>
+										<td>31052</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="25" disabled value="25" /></td>
+										<td>None None</td>
+										<td>
+											15353446627
+										</td>
+										<td>陕西</td>
+										<td>
+											宝鸡市
+										</td>
+										<td>30544</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="26" disabled value="26" /></td>
+										<td>None None</td>
+										<td>
+											13315478920
+										</td>
+										<td>河北</td>
+										<td>
+											石家庄市
+										</td>
+										<td>30328</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="27" disabled value="27" /></td>
+										<td>None None</td>
+										<td>
+											15309134887
+										</td>
+										<td>陕西</td>
+										<td>
+											渭南市
+										</td>
+										<td>30201</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="28" disabled value="28" /></td>
+										<td>None None</td>
+										<td>
+											18135102774
+										</td>
+										<td>山西</td>
+										<td>
+											晋中市
+										</td>
+										<td>28972</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="29" disabled value="29" /></td>
+										<td>None None</td>
+										<td>
+											18003288881
+										</td>
+										<td>河北</td>
+										<td>
+											衡水市
+										</td>
+										<td>28763</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="30" disabled value="30" /></td>
+										<td>None None</td>
+										<td>
+											13325117857
+										</td>
+										<td>山东</td>
+										<td>
+											泰安市
+										</td>
+										<td>27935</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="34" disabled value="34" /></td>
+										<td>None None</td>
+										<td>
+											15317032295
+										</td>
+										<td>上海</td>
+										<td>
+											上海市
+										</td>
+										<td>22767</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="35" disabled value="35" /></td>
+										<td>None None</td>
+										<td>
+											18135982567
+										</td>
+										<td>山西</td>
+										<td>
+											运城市
+										</td>
+										<td>22018</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="38" disabled value="38" /></td>
+										<td>None None</td>
+										<td>
+											18039799069
+										</td>
+										<td>福建</td>
+										<td>
+											南平市
+										</td>
+										<td>19589</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="39" disabled value="39" /></td>
+										<td>None None</td>
+										<td>
+											18956983360
+										</td>
+										<td>安徽</td>
+										<td>
+											安庆
+										</td>
+										<td>19576</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="40" disabled value="40" /></td>
+										<td>None None</td>
+										<td>
+											18149113729
+										</td>
+										<td>陕西</td>
+										<td>
+											咸阳
+										</td>
+										<td>18837</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="41" disabled value="41" /></td>
+										<td>None None</td>
+										<td>
+											18951366259
+										</td>
+										<td>上海</td>
+										<td>
+											上海市
+										</td>
+										<td>16969</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="42" disabled value="42" /></td>
+										<td>None None</td>
+										<td>
+											18157242029
+										</td>
+										<td>浙江</td>
+										<td>
+											湖州
+										</td>
+										<td>16263</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="43" disabled value="43" /></td>
+										<td>None None</td>
+										<td>
+											18043101797
+										</td>
+										<td>吉林</td>
+										<td>
+											长春
+										</td>
+										<td>15573</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="44" disabled value="44" /></td>
+										<td>None None</td>
+										<td>
+											13345187033
+										</td>
+										<td>山东</td>
+										<td>
+											济宁市
+										</td>
+										<td>15405</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="45" disabled value="45" /></td>
+										<td>None None</td>
+										<td>
+											13323059296
+										</td>
+										<td>河北</td>
+										<td>
+											唐山市
+										</td>
+										<td>14692</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="47" disabled value="47" /></td>
+										<td>None None</td>
+										<td>
+											13371090198
+										</td>
+										<td>山东</td>
+										<td>
+											潍坊市
+										</td>
+										<td>13324</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="48" disabled value="48" /></td>
+										<td>None None</td>
+										<td>
+											15329634956
+										</td>
+										<td>贵州</td>
+										<td>
+											安顺市
+										</td>
+										<td>13226</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="49" disabled value="49" /></td>
+										<td>None None</td>
+										<td>
+											15300165884
+										</td>
+										<td>北京</td>
+										<td>
+											北京市
+										</td>
+										<td>12913</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="50" disabled value="50" /></td>
+										<td>None None</td>
+										<td>
+											18053957991
+										</td>
+										<td>山东</td>
+										<td>
+											临沂市
+										</td>
+										<td>12759</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="51" disabled value="51" /></td>
+										<td>None None</td>
+										<td>
+											13313222817
+										</td>
+										<td>河北</td>
+										<td>
+											保定市
+										</td>
+										<td>12542</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="52" disabled value="52" /></td>
+										<td>None None</td>
+										<td>
+											18991401501
+										</td>
+										<td>陕西</td>
+										<td>
+											商洛
+										</td>
+										<td>10837</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="53" disabled value="53" /></td>
+										<td>None None</td>
+										<td>
+											15359025132
+										</td>
+										<td>福建</td>
+										<td>
+											厦门市
+										</td>
+										<td>10722</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="54" disabled value="54" /></td>
+										<td>None None</td>
+										<td>
+											13324886331
+										</td>
+										<td>广西</td>
+										<td>
+											梧州市
+										</td>
+										<td>9959</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="55" disabled value="55" /></td>
+										<td>None None</td>
+										<td>
+											15389687025
+										</td>
+										<td>陕西</td>
+										<td>
+											咸阳市
+										</td>
+										<td>9678</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="56" disabled value="56" /></td>
+										<td>None None</td>
+										<td>
+											15309363999
+										</td>
+										<td>甘肃</td>
+										<td>
+											张掖市
+										</td>
+										<td>9622</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="57" disabled value="57" /></td>
+										<td>None None</td>
+										<td>
+											18911404202
+										</td>
+										<td>北京</td>
+										<td>
+											北京
+										</td>
+										<td>9609</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="58" disabled value="58" /></td>
+										<td>None None</td>
+										<td>
+											13301992727
+										</td>
+										<td>上海</td>
+										<td>
+											上海
+										</td>
+										<td>9565</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="59" disabled value="59" /></td>
+										<td>None None</td>
+										<td>
+											18911891067
+										</td>
+										<td>北京</td>
+										<td>
+											北京市
+										</td>
+										<td>9440</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="60" disabled value="60" /></td>
+										<td>None None</td>
+										<td>
+											18967982333
+										</td>
+										<td>北京</td>
+										<td>
+											北京市
+										</td>
+										<td>9203</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="61" disabled value="61" /></td>
+										<td>None None</td>
+										<td>
+											18058753265
+										</td>
+										<td>浙江</td>
+										<td>
+											杭州市
+										</td>
+										<td>9041</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="62" disabled value="62" /></td>
+										<td>None None</td>
+										<td>
+											13311088889
+										</td>
+										<td>上海</td>
+										<td>
+											上海市
+										</td>
+										<td>9001</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="69" disabled value="69" /></td>
+										<td>None None</td>
+										<td>
+											18074917329
+										</td>
+										<td>广西</td>
+										<td>
+											南宁市
+										</td>
+										<td>7105</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="72" disabled value="72" /></td>
+										<td>None None</td>
+										<td>
+											18198370157
+										</td>
+										<td>贵州</td>
+										<td>
+											六盘水
+										</td>
+										<td>6889</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="73" disabled value="73" /></td>
+										<td>None None</td>
+										<td>
+											18966544241
+										</td>
+										<td>陕西</td>
+										<td>
+											咸阳市
+										</td>
+										<td>6839</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="74" disabled value="74" /></td>
+										<td>None None</td>
+										<td>
+											13355918397
+										</td>
+										<td>浙江</td>
+										<td>
+											宁波市
+										</td>
+										<td>6679</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="75" disabled value="75" /></td>
+										<td>None None</td>
+										<td>
+											13356329297
+										</td>
+										<td>山东</td>
+										<td>
+											枣庄市
+										</td>
+										<td>6153</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="78" disabled value="78" /></td>
+										<td>None None</td>
+										<td>
+											13365352602
+										</td>
+										<td>山东</td>
+										<td>
+											烟台市
+										</td>
+										<td>5502</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="79" disabled value="79" /></td>
+										<td>None None</td>
+										<td>
+											18077247501
+										</td>
+										<td>广西</td>
+										<td>
+											梧州市
+										</td>
+										<td>5393</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="80" disabled value="80" /></td>
+										<td>None None</td>
+										<td>
+											18057104765
+										</td>
+										<td>浙江</td>
+										<td>
+											杭州市
+										</td>
+										<td>5229</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="81" disabled value="81" /></td>
+										<td>None None</td>
+										<td>
+											13371515773
+										</td>
+										<td>山东</td>
+										<td>
+											东营市
+										</td>
+										<td>5036</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="82" disabled value="82" /></td>
+										<td>None None</td>
+										<td>
+											18169332198
+										</td>
+										<td>上海</td>
+										<td>
+											上海市
+										</td>
+										<td>4687</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="83" disabled value="83" /></td>
+										<td>None None</td>
+										<td>
+											18919066208
+										</td>
+										<td>甘肃</td>
+										<td>
+											兰州
+										</td>
+										<td>4621</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="84" disabled value="84" /></td>
+										<td>None None</td>
+										<td>
+											18065291756
+										</td>
+										<td>福建</td>
+										<td>
+											泉州市
+										</td>
+										<td>4489</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="85" disabled value="85" /></td>
+										<td>None None</td>
+										<td>
+											18106329721
+										</td>
+										<td>山东</td>
+										<td>
+											枣庄市
+										</td>
+										<td>4300</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="86" disabled value="86" /></td>
+										<td>None None</td>
+										<td>
+											15370018973
+										</td>
+										<td>江苏</td>
+										<td>
+											苏州市
+										</td>
+										<td>4188</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="87" disabled value="87" /></td>
+										<td>None None</td>
+										<td>
+											15349183073
+										</td>
+										<td>陕西</td>
+										<td>
+											咸阳
+										</td>
+										<td>4161</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="88" disabled value="88" /></td>
+										<td>None None</td>
+										<td>
+											18059119039
+										</td>
+										<td>福建</td>
+										<td>
+											福州市
+										</td>
+										<td>4152</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="89" disabled value="89" /></td>
+										<td>None None</td>
+										<td>
+											18132113632
+										</td>
+										<td>河北</td>
+										<td>
+											石家庄市
+										</td>
+										<td>3863</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="90" disabled value="90" /></td>
+										<td>None None</td>
+										<td>
+											18991733312
+										</td>
+										<td>陕西</td>
+										<td>
+											宝鸡市
+										</td>
+										<td>3762</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="91" disabled value="91" /></td>
+										<td>None None</td>
+										<td>
+											18049060579
+										</td>
+										<td>陕西</td>
+										<td>
+											西安市
+										</td>
+										<td>3638</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="92" disabled value="92" /></td>
+										<td>None None</td>
+										<td>
+											13349414141
+										</td>
+										<td>江苏</td>
+										<td>
+											南京市
+										</td>
+										<td>3533</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="93" disabled value="93" /></td>
+										<td>None None</td>
+										<td>
+											18155004332
+										</td>
+										<td>安徽</td>
+										<td>
+											滁州市
+										</td>
+										<td>3417</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="95" disabled value="95" /></td>
+										<td>None None</td>
+										<td>
+											18066391800
+										</td>
+										<td>浙江</td>
+										<td>
+											温州市
+										</td>
+										<td>3012</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="96" disabled value="96" /></td>
+										<td>None None</td>
+										<td>
+											13362349691
+										</td>
+										<td>上海</td>
+										<td>
+											上海市
+										</td>
+										<td>2984</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" id="97" disabled value="97" /></td>
+										<td>None None</td>
+										<td>
+											18100610321
+										</td>
+										<td>江苏</td>
+										<td>
+											南京市
+										</td>
+										<td>2977</td>
+										<td>FXE</td>
+										<td></td>
+										<td></td>
+										<td>Upload To SF</td>
+										<td>2000/01/01 00:00:00</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="11">
+											<div style="text-align:left;margin-left:40px;">
+												<label>Total: 125 Records</label>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<nav class="pageNav">
+							<input type="hidden" id=SalesLeads value=100 />
+							<ul class="pagination">
+								<li model=SalesLeads page=0>
+									<a href="javascript:" aria-label="Previous">«</a>
+								</li>
+								<li class="active" model=SalesLeads page=1>
+									<a>1</a>
+								</li>
+								<li model=SalesLeads page=2>
+									<a>2</a>
+								</li>
+								<li model=SalesLeads page=2>
+									<a href="" aria-label="Previous">»</a>
+								</li>
+							</ul>
+							<div class="cols">cols:
+								<select model=SalesLeads id=UploadedNewColsId>
+									<option>5</option>
+									<option>10</option>
+									<option>15</option>
+									<option>20</option>
+									<option>25</option>
+									<option>30</option>
+									<option>35</option>
+									<option>40</option>
+									<option>45</option>
+									<option>50</option>
+									<option>55</option>
+									<option>60</option>
+									<option>65</option>
+									<option>70</option>
+									<option>75</option>
+									<option>80</option>
+									<option>85</option>
+									<option>90</option>
+									<option>95</option>
+									<option selected="selected">100</option>
+								</select>
+							</div>
+						</nav>
+						<div class="clear"></div>
+					</div>
+
+				</div>
+
+				<footer>2020 © IB Portfolio by Go Markets.</footer>
+			</div>
+
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!--弹框插件-->
+		<script src="js/jqueryConfirm.min.js"></script>
+		<!---->
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//全选
+				$("#selectAll").click(function() {
+					$("#newdatatable input[type='checkbox']:checkbox").prop("checked", true);
+				});
+				//清空
+				$("#unSelect").click(function() {
+					$("#newdatatable input[type='checkbox']:checkbox").prop("checked", false);
+				});
+				//反选
+				$("#reverse").click(function() {
+					$("#newdatatable input[type='checkbox']:checkbox").each(function() {
+						$(this).prop("checked", !$(this).prop("checked"));
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="javascript:">
+												<div class="left-element"><i class="fa fa-warning color-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Jane Doe</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html" class="linkChecked">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="content  animated fadeInRight">
+				<div class="wrap">
+					<!--右边位置页面标题和所在页面位置所有页面通用-->
+					<div class="content-header">
+						<h2>Open New Pro IB<small class="hidden-xs">IB Detail Information</small></h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="Defaults.html"><i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>Open New Pro IB</li>
+						</ul>
+					</div>
+					<!--右边位置over-->
+					<!--IB Detail Information-->
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>IB Detail Information</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">First Name:</label>
+											<input type="text" class="form-control" id="" placeholder="First Name" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Middle Name:</label>
+											<input type="text" class="form-control" id="" placeholder="Middle Name" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Last Name:</label>
+											<input type="text" class="form-control" id="" placeholder="Last Name" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Country:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="">Category 1</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Province/State:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">City:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Password:</label>
+											<input type="password" class="form-control" id="" placeholder="Password" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Address:</label>
+											<input type="text" class="form-control" id="" placeholder="Address" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Phone:</label>
+											<input type="text" class="form-control" id="" placeholder="Phone" />
+										</div>
+									</div>
+
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Email:</label>
+											<input type="text" class="form-control" id="" placeholder="Email" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Leverage:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Chinese Name:</label>
+											<input type="text" class="form-control" id="" placeholder="Chinese Name" />
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Card Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Card Number:</label>
+											<input type="text" class="form-control" id="" placeholder="Card Number" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Zip Code:</label>
+											<input type="text" class="form-control" id="" placeholder="Zip Code" />
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Servers:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Group:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="">Comment:</label>
+											<textarea name="" rows="" cols="" class="form-control"></textarea>
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--IB Detail Information over-->
+					<br />
+					<!--IB Brand-->
+
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>IB Brand</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Sales Team:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Sales Owner:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">IB Brand Code:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+												<div class="input-group-addon"> <button type="button" class="btn btn-search btn-sm">Create</button></div>
+											</div>
+											<p class="help-block">提示信息！</p>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Client Group:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+					<!--IB Brand over-->
+					<br />
+					<!--IB Commission Setting-->
+
+					<div class='pageTitle'>
+						<p class="pageTitBg"><i class="fa fa-chevron-circle-down"></i>IB Commission Setting</p>
+						<!--IB1-->
+						<div class="container-fluid">
+							<form action="">
+								<div class="IB IB1">
+									<!--IB1-->
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+											<!--<div class="form-group">-->
+											<label for="">Main IB:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+											<!--</div>-->
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>FX</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAU</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAG</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>CFD</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>OIL</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+										<!--h3标签是右边禁用的按钮,控制下一个class为IB的div-->
+										<h3><div class="col-md-12"><button type="button" class="pull-right btn btn-sm btn-default" disabled="disabled" id="IB1">Add Sub IB</button></div></h3>
+									</div>
+								</div>
+							</form>
+							<!--IB1 End-->
+							<!--IB2 -->
+							<form action="">
+								<div class="IB IB2">
+									<!--IB1-->
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+											<label for="">Main IB:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>FX</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAU</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAG</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>CFD</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>OIL</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+										<!--h3标签是右边禁用的按钮,控制下一个class为IB的div-->
+										<h3><div class="col-md-12"><button type="button" class="pull-right btn btn-sm btn-success" disabled="disabled" id="IB2">Add Sub IB</button></div></h3>
+									</div>
+								</div>
+							</form>
+							<!--IB2 End-->
+							<!--IB3-->
+							<form action="">
+								<div class="IB IB3">
+									<!--IB1-->
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+											<label for="">Main IB:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>FX</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAU</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAG</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>CFD</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>OIL</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+										<!--h3标签是右边禁用的按钮,控制下一个class为IB的div-->
+										<h3><div class="col-md-12"><button type="button" class="pull-right btn btn-sm btn-success" disabled="disabled" id="IB3">Add Sub IB</button></div></h3>
+									</div>
+								</div>
+							</form>
+							<!--IB3 End-->
+							<!--IB4-->
+							<form action="">
+								<div class="IB IB4">
+									<!--IB1-->
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+											<label for="">Main IB:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value=""></option>
+												<option value="Category 1">Category 1</option>
+												<option value="Category 2">Category 2</option>
+											</select>
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>FX</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAU</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>XAG</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>CFD</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-lg-2">
+										</div>
+										<div class="col-md-2 col-lg-1 mT17"><button type="button" class="form-control btn btn-sm btn-default"><b>OIL</b></button></div>
+										<div class="col-md-3 col-lg-2">
+											<label>commission Type:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="">Pips</option>
+												<option value="">$</option>
+												<option value="">%</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-lg-2">
+											<label for="">Commission STAD:</label>
+											<input type="text" class="form-control" value="" />
+										</div>
+										<!--h3标签是右边禁用的按钮,控制下一个class为IB的div-->
+										<h3><div class="col-md-12"><button type="button" class="pull-right btn btn-sm btn-success" disabled="disabled" id="IB4">Add Sub IB</button></div></h3>
+									</div>
+								</div>
+							</form>
+							<!--IB4 End-->
+						</div>
+						<!--提交按钮-->
+						<hr />
+						<div class="text-center">
+							<button type="button" class="btn btn-sm btn-search"><i class="fa fa-check"></i>Open</button>
+							<button type="button" class="btn btn-sm btn-default col-xs-offset-1"><i class="fa fa-close"></i>Cancel</button>
+						</div>
+						<br />
+						</form>
+					</div>
+
+					<!--IB Commission Setting over-->
+				</div>
+				<footer>2019 © IB Portfolio by Go Markets.</footer>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!----->
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

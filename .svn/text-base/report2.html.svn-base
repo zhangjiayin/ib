@@ -1,0 +1,1655 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Report</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/jqueryConfirm.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/new_file.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3>
+									<i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="javascript:">
+												<div class="left-element">
+													<i class="fa fa-warning"></i>
+												</div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Test Name</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:">
+										<i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html">
+										<i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+			<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html" class="linkChecked">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="content animated fadeInRight">
+				<div class="wrap">
+					<div class="content-header">
+						<h2>Report
+							<small class="hidden-xs">Report Detail</small>
+						</h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="Defaults.html">
+									<i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>Report</li>
+						</ul>
+					</div>
+					<div class='pageTitle'>
+						<p class="pageTitBg">
+							<i class="fa fa-chevron-circle-down"></i>Report</p>
+						<div class="container-fluid">
+							<form action="">
+								<div class="row">
+									<div class="alert alert-error" id="alert1">
+										<strong>The End</strong>
+									</div>
+									<div class="col-md-12 col-lg-3 text-center mT17">
+										<button type="button" class="btn btn-xs btn-search" id="add-report">
+										<i class="fa fa-plus"></i>Add</button>
+										<button type="button" class="btn btn-xs btn-search" id="refresh">
+										<i class="fa fa-edit"></i>Edit</button>
+										<span class="help-block">信息一致!!</span>
+									</div>
+
+									<!--2018.12.24新增-->
+									<div id="divselect" class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Select Name:</label>
+											<div id="citeSel"><cite id="cite">-Select-</cite><b></b></div>
+											<ul id="phone">
+												<li>
+													<a href="javascript:;" selectid="1">-Select-</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!--2018.12.24新增 end-->
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">From:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" id="dp1" data-date-format="yyyy-mm-dd" value="Choose Date" class="form-control" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">To:</label>
+											<div class="dateInput">
+												<input type="text" readonly="readonly" id="dp2" data-date-format="yyyy-mm-dd" class="form-control" value="Choose Date" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="">Report:</label>
+											<select class="form-control chosen" data-placeholder="Choose a Category" tabindex="1">
+												<option value="0">-Select-</option>
+												<option value="1">Closed Trades Report</option>
+												<option value="2">Summary Report</option>
+												<option value="3">Deposit and Withdrawal Report</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<hr />
+								<div class="text-center">
+									<button id="request" type="button" class="btn btn-sm btn-search"><i class="fa fa-check"></i>Request</button>
+								</div>
+
+							</form>
+						</div>
+					</div>
+					<table class="display reportTable reportTable1" style="width:100%">
+						<thead>
+							<tr>
+								<th>Deal</th>
+								<th>Login</th>
+								<th>Name</th>
+								<th>Open Time</th>
+								<th>Type</th>
+								<th>Symbol</th>
+								<th>Volume</th>
+								<th>Open Price</th>
+								<th>Close Time</th>
+								<th>Close Price</th>
+								<th>Commission</th>
+								<th>Taxes</th>
+								<th>Agent</th>
+								<th>Swap</th>
+								<th>Profit</th>
+								<th>Pips</th>
+								<th>Comment</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>赵志强</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>赵志强</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>赵志强</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>赵志强</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>2.32</td>
+									<td>23</td>
+									<td>222</td>
+							</tr>
+
+						</tbody>
+						<tfoot></tfoot>
+					</table>
+					<table class="display reportTable reportTable2" style="width:100%">
+						<thead>
+							<tr>
+								<th>Login</th>
+								<th>Name</th>
+								<th>Deposit</th>
+								<th>Withdraw</th>
+								<th>In/Out</th>
+								<th>Credit</th>
+								<th>Volume</th>
+								<th>Commission</th>
+								<th>Taxes</th>
+								<th>Agent</th>
+								<th>Storage</th>
+								<th>Profit</th>
+								<th>Last Balance</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+							<tr>
+								<td>5688558</td>
+								<td>758963</td>
+								<td>ZhiQiang Zhao</td>
+								<td>2018.06.01 11:35:3d4</th>
+									<td>buy</td>
+									<td>eurchf</td>
+									<td>0.10</td>
+									<td>1.16525</td>
+									<td>2018.05.25 12:12:12</td>
+									<td>1.1632</td>
+									<td>0.00</td>
+									<td>0.00</td>
+									<td>0.00</td>
+							</tr>
+						</tbody>
+						<tfoot></tfoot>
+					</table>
+					<table class="display reportTable reportTable3" style="width:100%">
+						<thead>
+							<tr>
+								<th>Deal</th>
+								<th>Login</th>
+								<th>Name</th>
+								<th>Date</th>
+								<th>Comment</th>
+								<th>Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+							<tr>
+								<td>4545</td>
+								<td>123456</td>
+								<td>XingYu Zhou</td>
+								<td>2018.05.25 12:55:00</td>
+								<td>Transfer Out To 745632</td>
+								<td>-10 000.00</td>
+							</tr>
+						</tbody>
+						<tfoot></tfoot>
+					</table>
+
+					<p class="report-total text-center mT12">
+						<span>净值：
+							<b>$ 2000.00</b>
+						</span>
+						<span>Volume：
+							<b>50</b>
+						</span>
+						<span>In/Out：
+							<b>15/222</b>
+						</span>
+					</p>
+				</div>
+				<footer>2019 © IB Portfolio by Go Markets.</footer>
+			</div>
+
+		</div>
+		<!--report 模态框弹出框-->
+		<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog report-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Report</h4>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="user-list-name">
+								<label for="user-list-name">Name：</label>
+								<input type="text" id="user-list-name" />
+							</div>
+							<div id="two_way_list_selector_a" class="two_way_list_selector margin_top_10">
+								<div class="select_o">
+									<div class="select_l">
+										<p>List of selected users（<span class="left_number"></span>）：</p>
+										<div class="bor-solid">
+											<div class="reportTit">
+												<ul>
+													<li>login</li>
+													<li>Name</li>
+													<li>Group</li>
+													<li>Country</li>
+													<li>Equity</li>
+													<li>Status</li>
+													<li>IB</li>
+												</ul>
+											</div>
+											<div class="select_a">
+												<div data-value="1" data-index="0" class="item">
+													<span>
+														<i class="fa fa-user"></i>001</span>
+													<span>First Name</span>
+													<span>Manager1</span>
+													<span>United StatesUnited StatesUnited StatesUnited States</span>
+													<span>966.22</span>
+													<span>RE1</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="2" data-index="1" class="item">
+													<span>
+														<i class="fa fa-user"></i>001</span>
+													<span>First Name</span>
+													<span>Manager2</span>
+													<span>China</span>
+													<span>966.22</span>
+													<span>RE1</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="3" data-index="2" class="item">
+													<span>
+														<i class="fa fa-user"></i>001</span>
+													<span>First Name</span>
+													<span>Manager2</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE1</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="4" data-index="3" class="item">
+													<span>
+														<i class="fa fa-user deleted"></i>001</span>
+													<span>First Name</span>
+													<span>Manager3</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE4</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="5" data-index="4" class="item">
+													<span>
+														<i class="fa fa-user"></i>001</span>
+													<span>First Name</span>
+													<span>Manager1</span>
+													<span>China</span>
+													<span>966.22</span>
+													<span>RE2</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="6" data-index="5" class="item">
+													<span>
+														<i class="fa fa-user deleted"></i>001</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="7" data-index="6" class="item">
+													<span>
+														<i class="fa fa-user"></i>001</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="8" data-index="7" class="item">
+													<span>
+														<i class="fa fa-user"></i>001</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="9" data-index="8" class="item">
+													<span>
+														<i class="fa fa-user"></i>009</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="10" data-index="9" class="item">
+													<span>
+														<i class="fa fa-user"></i>010</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>IB5</span>
+												</div>
+												<div data-value="11" data-index="10" class="item">
+													<span>
+														<i class="fa fa-user"></i>011</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>RE1</span>
+												</div>
+												<div data-value="12" data-index="11" class="item">
+													<span><i class="fa fa-user deleted"></i>001</span>
+													<span>First Name</span>
+													<span>Manager</span>
+													<span>United States</span>
+													<span>966.22</span>
+													<span>RE</span>
+													<span>IB2</span>
+												</div>
+											</div>
+										</div>
+										<div class="button-group">
+											<button id="add" type="button" class="btn btn-xs btn-search">Add&nbsp;
+												<i class="fa fa-angle-double-right"></i>
+											</button>
+											<button id="CheckAll" type="button" class="btn btn-xs btn-search">Check All&nbsp;
+												<i class="fa fa-angle-double-right"></i>
+											</button>
+											<button id="group" type="button" class="btn btn-xs btn-search">Group&nbsp;
+												<i class="fa fa-angle-double-right"></i>
+											</button>
+											<button id="country" type="button" class="btn btn-xs btn-search">Country&nbsp;
+												<i class="fa fa-angle-double-right"></i>
+											</button>
+											<button id="status" type="button" class="btn btn-xs btn-search">Status&nbsp;
+												<i class="fa fa-angle-double-right"></i>
+											</button>
+											<button id="IB" type="button" class="btn btn-xs btn-search">IB&nbsp;
+												<i class="fa fa-angle-double-right"></i>
+											</button>
+											<div class="search-input">search:
+												<input id="search_input">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="select_o">
+									<div class="select_r">
+										<p>List of selected users（
+											<span id="chosen_num" class="right_number">25</span>）：</p>
+										<div class="bor-solid chosen-list" id="right_list">
+											<div class="reportTit">
+												<ul>
+													<li>login</li>
+													<li>Name</li>
+													<li>Group</li>
+													<li>Country</li>
+													<li>Equity</li>
+													<li>Status</li>
+													<li>IB</li>
+												</ul>
+											</div>
+											<div class="select_b"></div>
+
+										</div>
+										<div class="button-group">
+											<button type="button" id="delete2" class="btn btn-xs btn-search">
+												<i class="fa fa-trash"></i>Delete</button>
+											<button type="button" id="DeleteAll" class="btn btn-xs btn-search">
+												<i class="fa fa-trash"></i>Delete All</button>
+											<button type="button" id="delete_group" class="btn btn-xs btn-search"><i class="fa fa-angle-double-left"></i>Group</button>
+											<button type="button" id="delete_country" class="btn btn-xs btn-search">
+												<i class="fa fa-angle-double-left"></i>Country</button>
+											<button type="button" id="delete_status" class="btn btn-xs btn-search">
+												<i class="fa fa-angle-double-left"></i>Status</button>
+											<button type="button" id="deleteIB" class="btn btn-xs btn-search">
+												<i class="fa fa-angle-double-left"></i>IB</button>
+											<button type="button" id="selectedSub" class="btn btn-xs btn-search">
+												<i class="fa fa-check"></i>OK</button>
+											<button type="button" class="btn btn-xs btn-search" data-dismiss="modal">
+												<i class="fa fa-close"></i>Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- select 确认删除 模态框弹出框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title">确认删除？</h5>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-success Sure">Yes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--datatable-->
+		<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" language="javascript" src="js/dataTables-buttons.js"></script>
+		<script type="text/javascript" language="javascript" src="js/dataTable-jszip.min.js"></script>
+		<script type="text/javascript" language="javascript" src="js/buttons-html5.min.js"></script>
+		<!--过滤-->
+		<script src="js/jquery.fastLiveFilter.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!--弹框插件-->
+		<script src="js/jqueryConfirm.min.js"></script>
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+		<!--report-->
+		<script src="js/report.js"></script>
+
+		<script>
+			$("#refresh").click(function() {
+				var citeTxt = $("#cite").text();
+				if(citeTxt !== '-Select-') {
+					$('#reportModal').modal('show');
+				} else {
+					$.confirm({
+						title: "提示", // hides the title.
+						content: ' 请先选择一条！',
+						cancelButton: "确认", // hides the cancel button.
+						confirmButton: false, // hides the confirm button.
+						backgroundDismiss: false, //点击背景板弹框消失
+						closeIcon: false // hides the close icon.
+					});
+				}
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<!--[if lt IE 9]>
+      			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> 
+       <![endif]-->
+		<!--[if lte IE 7]>
+ 				<script>window.location.href='https://support.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+ 		<![endif]-->
+	</head>
+
+	<body>
+		<div class="page-header">
+			<div class="leftside-header">
+				<div class="logo">
+					<a href="https://www.gomarkets.cn/" target="_blank" class="on-click">
+						<img alt="logo" src="images/footer_logo.png" />
+					</a>
+				</div>
+				<div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open" data-target="html">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<div class="rightside-header">
+				<div class="header-section hidden-xs" id="notice-headerbox">
+					<div class="notice" id="messages-notice">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+						<span>4</span>
+						<div class="dropdown-box basic">
+							<div class="drop-header">
+								<h3><i class="fa fa-bell-o" aria-hidden="true"></i>Message</h3>
+								<span class="number">4</span>
+							</div>
+							<div class="drop-content">
+								<div class="widget-list list-left-element list-sm">
+									<ul>
+										<li>
+											<a href="#">
+												<div class="left-element"><i class="fa fa-warning color-warning"></i></div>
+												<div class="text">
+													<span class="title">4个新账户</span>
+													<span class="subtitle">待处理</span>
+												</div>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-separator"></div>
+				</div>
+				<div class="header-section" id="user-headerbox">
+					<div class="user-header-wrap">
+						<div class="user-info">
+							<span class="user-name">Jane Doe</span>
+						</div>
+						<i class="fa fa-chevron-down icon-open" aria-hidden="true"></i>
+						<i class="fa fa-chevron-up icon-close" aria-hidden="true"></i>
+					</div>
+					<div class="user-options dropdown-box">
+						<div class="drop-content basic">
+							<ul>
+								<li>
+									<a href="javascript:"><i class="fa fa-user" aria-hidden="true"></i>Lock Screen</a>
+								</li>
+								<li>
+									<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i>Sign Out</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-body">
+				<div class="left-sidebar">
+				<div class="left-sidebar-header">
+					<div class="left-sidebar-title"> </div>
+					<div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs" data-toggle-class="left-sidebar-collapsed" data-target="html">
+						<span></span>
+					</div>
+				</div>
+				<div id="left-nav" class="nano">
+					<div class="nano-content">
+						<nav>
+							<ul class="nav" id="main-nav">
+								<li>
+									<a href="Defaults.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-cubes" aria-hidden="true"></i><span>Customer Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CustomerService.html">Customer Service</a>
+										</li>
+										<li>
+											<a href="DepositWithdrawal.html">Deposit&Withdrawal</a>
+										</li>
+										<li>
+											<a href="MyCustomer.html">My Customer</a>
+										</li>
+										<li>
+											<a href="MyIBList.html">My IB List</a>
+										</li>
+										<li>
+											<a href="ClosePosition.html">Close Position</a>
+										</li>
+										<li>
+											<a href="SalesLeads.html">Sales Leads</a>
+										</li>
+										<li>
+											<a href="BlacklistManage.html">Blacklist Manage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-pie-chart" aria-hidden="true"></i><span>IB Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="IBList.html">IB List</a>
+										</li>
+										<li>
+											<a href="OldIBCustomersUpdate.html">Old IB Customers Update</a>
+										</li>
+										<li>
+											<a href="OldIBUpdate.html">Old IB Update</a>
+										</li>
+										<li class="active-item">
+											<a href="OpenNewIB.html">Open New IB</a>
+										</li>
+										<li>
+											<a href="OpenProIB.html">Open Pro IB</a>
+										</li>
+										<li>
+											<a href="IBSummary.html">IB Summary</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-columns" aria-hidden="true"></i><span>Account Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="AccountList.html">Account List</a>
+										</li>
+										<li>
+											<a href="AccountListMT5.html">Account List(MT5)</a>
+										</li>
+										<li>
+											<a href="AccountReport.html">Account Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item open-item active-item">
+									<a><i class="fa fa-table" aria-hidden="true"></i><span>Funding Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Deposit.html">Deposit</a>
+										</li>
+										<li>
+											<a href="Exchange.html">Exchange</a>
+										</li>
+										<li>
+											<a href="InternalTransfer.html">Internal Transfer</a>
+										</li>
+										<li>
+											<a href="ManualWithdrawal.html">Manual Withdrawal</a>
+										</li>
+										<li>
+											<a href="WithDrawal.html">Withdrawal</a>
+										</li>
+										<li>
+											<a href="ChangeLeverage.html" class="linkChecked">Change Leverage</a>
+										</li>
+										<li>
+											<a href="WalletTransfer.html">Wallet Transfer</a>
+										</li>
+										<li>
+											<a href="ActivityPromotion.html">Activity Promotion</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-files-o" aria-hidden="true"></i><span>User Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="CreateUser.html">Create User</a>
+										</li>
+										<li>
+											<a href="UserList.html">User List</a>
+										</li>
+										<li>
+											<a href="RolePrivilege.html">Role Privilege</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-paper-plane" aria-hidden="true"></i><span>System Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="MessagePush.html">Message Push</a>
+										</li>
+										<li>
+											<a href="PaymentChannel.html">Payment Channel</a>
+										</li>
+										<li>
+											<a href="PaymentChannelCreate.html">Payment Channel Create</a>
+										</li>
+										<li>
+											<a href="VipPaymentSetting.html">Vip Payment</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-desktop" aria-hidden="true"></i><span>Trading Desk</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="report2.html">Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa fa-line-chart" aria-hidden="true"></i><span>Internal Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="ManageDashboard.html">Dashboard</a>
+										</li>
+										<li>
+											<a href="SalesPerformance.html">Sales Performance</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Report Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="WalletAccountReport.html">Account</a>
+										</li>
+										<li>
+											<a href="javascript:">Funding</a>
+										</li>
+										<li>
+											<a href="javascript:">Trade Summary</a>
+										</li>
+										<li>
+											<a href="WalletSummaryReport.html">Wallet Summary</a>
+										</li>
+										<li>
+											<a href="javascript:">Wallet Detail</a>
+										</li>
+										<li>
+											<a href="javascript:">Sales Report</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-child-item close-item">
+									<a><i class="fa fa-calendar" aria-hidden="true"></i><span>Content Manage</span></a>
+									<ul class="nav child-nav level-1">
+										<li>
+											<a href="Email.html">Create Activity</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content  animated fadeInRight">
+				<div class="wrap">
+					<!--右边位置页面标题和所在页面位置所有页面通用-->
+					<div class="content-header">
+						<h2>Change Leverage</h2>
+						<ul class="breadcrumb hidden-xs">
+							<li>
+								<a href="http://192.168.89.131:8096/Defaults"><i class="fa fa-home"></i>Home</a>
+							</li>
+							<li>
+								Change Leverage
+							</li>
+						</ul>
+					</div>
+					<!--右边位置over-->
+
+					<div class="pageTitle">
+						<p class="pageTitBg">
+							<i class="fa fa-chevron-circle-down"></i> New Change Leverage
+							<a href="javascript:void(0)" onclick="Export(0)" class="export"><i class="fa fa-upload"></i>Export</a>
+						</p>
+
+						<div class="container-fluid">
+							<form action="#" id="NewApplication">
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="from">From:</label>
+											<div class="dateInput">
+
+												<input type="text" readonly="readonly" id="dp1" data-date-format="yyyy-mm-dd" class="form-control" placeholder="Choose Date" value="2020-03-01" />
+												<input id="hidFromDate" type="hidden" value="2020-03-01" />
+												<input id="hidToDate" type="hidden" value="2020-03-04" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="to">To:</label>
+											<div class="dateInput">
+
+												<input type="text" readonly="readonly" id="dp2" data-date-format="yyyy-mm-dd" class="form-control" placeholder="Choose Date" value="2020-03-04" />
+												<input id="hidFromDate" type="hidden" value="2020-03-01" />
+												<input id="hidToDate" type="hidden" value="2020-03-04" />
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="status">Status:</label>
+											<select class="form-control chosen" model="NewApplication" id="newStatus" name="status" tabindex="New Application ">
+												<option>All</option>
+												<option value="1">New Application</option>
+												<option value="8 ">In Process </option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="search">Search:</label>
+											<input class="form-control" model="NewApplication" name="search" id="searchTxt" placeholder="Search..." type="text">
+										</div>
+									</div>
+									<div class="col-md-4 m-center">
+										<button class="btn btn-sm btn-search mT17" id="searchBtn" type="button"><i class="fa fa-search"></i>Search</button>
+										<button type="button" id="refreshBtn" class="btn btn-sm btn-search mT17"><i class="fa fa-refresh"></i>Refresh</button>
+
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!-- END PORTLET-->
+					<div id="divNewApplication">
+						<div class="table-responsive">
+							<table class="table table-hover table-striped" width="100%" height="100%" id="newdatatable">
+								<thead>
+									<tr>
+										<th>Application Date<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Name</th>
+										<th>MT4 Account<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Old Leverage<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>New Leverage<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Serial Number<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Client's Note<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Status<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Comment</th>
+										<th>Apply IP</th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+
+						<nav class="pageNav">
+
+						</nav>
+
+						<div class="clear"></div>
+
+					</div>
+
+					<div class="pageTitle">
+						<p class="pageTitBg">
+							<i class="fa fa-chevron-circle-down"></i>Change Leverage Completed
+							<a href="javascript:void(0)" onclick="Export(1)" class="export"><i class="fa fa-upload"></i>Export</a>
+						</p>
+
+						<div class="container-fluid">
+							<form action="#" id="CompletedApplication">
+								<div class="row">
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="from">From:</label>
+											<div class="dateInput">
+
+												<input type="text" readonly="readonly" id="dp3" data-date-format="yyyy-mm-dd" class="form-control" placeholder="Choose Date" value="2020-03-01" />
+												<input id="hidFromDate" type="hidden" value="2020-03-01" />
+												<input id="hidToDate" type="hidden" value="2020-03-04" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="to">To:</label>
+											<div class="dateInput">
+
+												<input type="text" readonly="readonly" id="dp4" data-date-format="yyyy-mm-dd" class="form-control" placeholder="Choose Date" value="2020-03-04" />
+												<input id="hidFromDate" type="hidden" value="2020-03-01" />
+												<input id="hidToDate" type="hidden" value="2020-03-04" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="status">Status:</label>
+											<select class="form-control chosen" model="CompletedApplication" id="compStatus" name="newstatus" tabindex="0">
+												<option value="">All</option>
+												<option value="2">Completed</option>
+												<option value="7">Invalid Order</option>
+												<option value="3">Cancelled Order</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-4 col-lg-2">
+										<div class="form-group">
+											<label for="search">Search:</label>
+											<input class="form-control" id="searchCompText" model="CompletedApplication" placeholder="Search..." name="search" type="text" />
+										</div>
+									</div>
+									<div class="col-md-4 m-center">
+										<button type="button" id="searchCompBtn" class="btn btn-sm btn-search mT17"><i class="fa fa-search"></i>Search</button>
+										<button type="button" class="btn btn-sm btn-search mT17" id="refreshBtn2"><i class="fa fa-refresh"></i>Refresh</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!-- END PORTLET-->
+					<div id="divCompletedApplication">
+						<div class="table-responsive">
+							<table class="table table-hover table-striped" width="100%" height="100%" id="completeddatatable">
+								<thead>
+									<tr>
+										<th>Application Date<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Name</th>
+										<th>MT4 Account<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Old Leverage<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>New Leverage<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Serial Number<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Client's Note<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Status<span><a href="javascript:void(0)" class="fa fa-sort"></a></span></th>
+										<th>Comment</th>
+										<th>Apply IP</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2020-03-04 09:34:50</td>
+										<td>
+											<a href="ChangeLeverageEdit.html">黄美莲</a>
+										</td>
+										<td>
+											<a href="ChangeLeverageEdit.html">744767</a>
+										</td>
+
+										<td>300</td>
+										<td>100</td>
+										<td>744767_LM2003043663069999</td>
+										<td></td>
+										<td>
+											<span class="label label-primary">Completed</span>
+
+										</td>
+										<td>修改杠杠</td>
+										<td>112.96.138.37</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<nav class="pageNav">
+							<input type="hidden" id=CompletedApplication value=5 />
+							<ul class="pagination">
+								<li model=CompletedApplication page=0>
+									<a href="javascript:" aria-label="Previous">«</a>
+								</li>
+								<li class="active" model=CompletedApplication page=1>
+									<a>1</a>
+								</li>
+								<li model=CompletedApplication page=2>
+									<a>2</a>
+								</li>
+								<li model=CompletedApplication page=3>
+									<a>3</a>
+								</li>
+								<li model=CompletedApplication page=2>
+									<a href="" aria-label="Previous">»</a>
+								</li>
+							</ul>
+							<div class="cols">cols:
+								<select model=CompletedApplication id=compColsId>
+									<option selected="selected">5</option>
+									<option>10</option>
+									<option>15</option>
+									<option>20</option>
+									<option>25</option>
+								</select>
+							</div>
+						</nav>
+
+						<div class="clear"></div>
+						<script src="/Scripts/js/tablesort.js"></script>
+
+					</div>
+
+				</div>
+				<footer>2020 © IB Portfolio by Go Markets.</footer>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!--导航栏收起展开-->
+		<script src="js/template-script.min.js"></script>
+		<!--table表格排序-->
+		<script src="js/jquery.tablesort.js"></script>
+		<!--select搜索框插件-->
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!--日期插件必须-->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!----->
+		<script src="js/app.js"></script>
+		<!--页面-->
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
